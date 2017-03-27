@@ -57,9 +57,10 @@ def create_result(testcase, outcome, ref_url, data, groups=None):
         message = get_error_from_request(post_req)
         raise RuntimeError(message)
 
+#assign unique group id for tests
+group_uuid = str(uuid.uuid4())
+
 for ami_result in results:
-    #assign unique group id to each ami
-    group_uuid = str(uuid.uuid4())
     overall_outcome = 'passed'
     ami_id = ''
     #iterate through all test cases for an ami
