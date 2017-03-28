@@ -1,86 +1,77 @@
-import yaml
+import argparse
+import os
 import requests
-import json
 import uuid
-import itertools
-import config
+import yaml
 
-RESULTSDB_API_URL = config.resultdb_api_url
-TRUSTED_CA = 'ca.crt'
+RESULTSDB_APIS = {
+    'prod': 'https://resultsdb.host.prod.eng.bos.redhat.com/api/v2.0',
+    'stage': 'https://resultsdb.host.stage.eng.bos.redhat.com/api/v2.0',
+    'dev': 'https://resultsdb-backend.host.dev.eng.pek2.redhat.com/api/v2.0',
+}
 
-#read dva tests results
-with open(config.yaml, 'r') as f:
-    doc = yaml.load(f)
 
-#initialize list of unique amis
-amis = []
-for ele in doc:
-    amis.append(ele['ami'])
-amis = list(set(amis))
+def parse_results(dva_yaml):
+    # Read dva tests results
+    with open(dva_yaml, 'r') as f:
+        doc = yaml.load(f)
 
-results = []
+    results = []
+    for item in doc:
+        if 'test' in item:
+            results.append({
+                'ami': item['ami'],
+                'name': item['test']['name'],
+                'result': item['test']['result'],
+            })
 
-for ami in amis:
-    tests = []
-    for ele in doc:
-        if ele['ami'] == ami:
-            if 'test' in ele:
-                test = []
-                test.append(ele['ami'])
-                test.append(ele['test']['name'])
-                test.append(ele['test']['result'])
-                tests.append(test)
-    results.append(tests)
+    return results
 
-def get_error_from_request(request):
-    try:
-        return request.json().get('message')
-    except ValueError:
-        return request.text
 
-def create_result(testcase, outcome, ref_url, data, groups=None):
-    if not groups:
-        groups = []
-    post_req = requests.post(
-        '{0}/results'.format(RESULTSDB_API_URL),
-        data=json.dumps({
+def import_results(results, environment):
+    # Assign unique group id for tests
+    group_uuid = str(uuid.uuid1())
+
+    url = '{0}/results'.format(RESULTSDB_APIS[environment])
+
+    for result in results:
+        testcase = 'dva.ami.{0}'.format(result['name'])
+        outcome = result['result'].upper()
+        if outcome == 'SKIP':
+            outcome = 'NEEDS_INSPECTION'
+        # If run from jenkins, BUILD_URL should be available
+        ref_url = os.environ.get('BUILD_URL')
+
+        # Create an entry for a test case into resultdb
+        #headers = {'content-type': 'application/json'}
+        body = {
             'testcase': testcase,
-            'groups': groups,
+            'groups': [group_uuid],
             'outcome': outcome,
             'ref_url': ref_url,
-            'data': data}),
-        headers={'content-type': 'application/json'},
-        verify=TRUSTED_CA)
-    if post_req.status_code == 201:
-        return True
-    else:
-        message = get_error_from_request(post_req)
-        raise RuntimeError(message)
-
-#assign unique group id for tests
-group_uuid = str(uuid.uuid4())
-
-for ami_result in results:
-    overall_outcome = 'passed'
-    ami_id = ''
-    #iterate through all test cases for an ami
-    for result in ami_result:
-        ami_id = result[0]
-        testcase = 'dva.ami.{0}'.format(result[1])
-        outcome = result[2]
-        if outcome == 'failed' or outcome == 'skip':
-            overall_outcome = 'FAILED'
-        if outcome == 'skip':
-            outcome = 'NEEDS_INSPECTION'
-        ref_url = 'http://some.jenkins.url/'
-        # Additional information
-        data = {
-            'item': result[0]
+            'data': {'item': result['ami']},
         }
+        rsp = requests.post(url, json=body)
 
-        #create an entry for a test case into resultdb
-        create_result(testcase, outcome, ref_url, data, groups=[group_uuid])
+        if rsp.status_code != 201:
+            try:
+                error = rsp.json().get('message')
+            except ValueError:
+                error = rsp.text
+            raise RuntimeError(error)
 
-    #create an entry for overall outcome for an ami into resultdb
-    create_result('dva.ami', overall_outcome, 'http://some.jenkins.url/', {'item': ami_id}, groups=[group_uuid])
 
+    return '{0}?groups={1}'.format(url, group_uuid)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description='Imports dva results into resultsdb')
+    parser.add_argument('-e', '--environment',
+                        default='dev',
+                        choices=['prod', 'stage', 'dev'],
+                        help='ResultsDB environment to use (prod, stage, dev)')
+    parser.add_argument('dva_yaml', help='Path to dva results yaml')
+    args = parser.parse_args()
+
+    results = parse_results(args.dva_yaml)
+    print(import_results(results, args.environment))
