@@ -12,9 +12,7 @@ def parse_results(dva_yaml):
         doc = yaml.load(f)
     #  If run from jenkins, BUILD_URL should be available
     ref_url = os.environ.get('BUILD_URL')
-    res = {}
     body = {}
-    msg = {}
     results = {}
     # iterate over each testcase
     for item in doc:
@@ -34,11 +32,9 @@ def parse_results(dva_yaml):
             testcase.update(name=name)
             testcase.update(ref_url=ref_url)
             results[name].update(testcase=testcase)
-    msg.update(results=results)
-    msg.update(ref_url=ref_url)
-    body.update(msg=msg)
-    res.update(body=body)
-    json_data = json.dumps(res)
+    body.update(results=results)
+    body.update(ref_url=ref_url)
+    json_data = json.dumps(body, sort_keys=True, indent=2)
     return json_data
 
 
