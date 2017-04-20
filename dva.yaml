@@ -1,0 +1,2924 @@
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285681.252233
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: assert_image
+  stage_result: passed
+  start_time: 1490285680.50709
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285710.054135
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: create_instance
+  stage_result: passed
+  start_time: 1490285681.25283
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285781.423226
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: attempt_ssh
+  stage_result: passed
+  start_time: 1490285710.054817
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.087209
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: allow_root_login
+  stage_result: passed
+  start_time: 1490285781.423723
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.08772
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: global_setup_script
+  stage_result: passed
+  start_time: 1490285785.087704
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285788.228635
+    exception: null
+    log:
+    - required_packages: [ipa-python-3.0.0-47.el6_7.2, libtalloc-2.1.5-1.el6_7, libtdb-1.3.8-1.el6_7,
+        libtevent-0.9.26-2.el6_7]
+    - {package NOT found: ipa-python-3.0.0-47.el6_7.2}
+    - {package NOT found: libtalloc-2.1.5-1.el6_7}
+    - {package NOT found: libtdb-1.3.8-1.el6_7}
+    - {package NOT found: libtevent-0.9.26-2.el6_7}
+    - comment: [rhnsd-5.0.13-5.el7.x86_64, redhat-release-server-7.3-7.el7.x86_64,
+        yum-rhn-plugin-2.0.1-6.el7.noarch, filesystem-3.2-21.el7.x86_64, pciutils-3.5.1-1.el7.x86_64,
+        basesystem-10.0-7.el7.noarch, wpa_supplicant-2.0-20.el7.x86_64, emacs-filesystem-24.3-18.el7.noarch,
+        libcgroup-0.41-11.el7.x86_64, nss-softokn-freebl-3.16.2.3-14.4.el7.x86_64,
+        trousers-0.3.13-1.el7.x86_64, glibc-2.17-157.el7.x86_64, glib-networking-2.42.0-1.el7.x86_64,
+        ncurses-libs-5.9-13.20130511.el7.x86_64, libsepol-2.5-6.el7.x86_64, json-c-0.11-4.el7_0.x86_64,
+        libselinux-2.5-6.el7.x86_64, kbd-misc-1.15.5-12.el7.noarch, info-5.1-4.el7.x86_64,
+        bind-libs-lite-9.9.4-37.el7.x86_64, libuuid-2.23.2-33.el7.x86_64, NetworkManager-1.4.0-12.el7.x86_64,
+        chkconfig-1.7.2-1.el7.x86_64, kbd-legacy-1.15.5-12.el7.noarch, nspr-4.11.0-1.el7_2.x86_64,
+        libcom_err-1.42.9-9.el7.x86_64, kernel-3.10.0-514.el7.x86_64, libxml2-2.9.1-6.el7_2.3.x86_64,
+        kexec-tools-2.0.7-50.el7.x86_64, grep-2.20-2.el7.x86_64, NetworkManager-tui-1.4.0-12.el7.x86_64,
+        libcap-ng-0.7.5-4.el7.x86_64, cloud-init-0.7.6-2.el7.x86_64, readline-6.2-9.el7.x86_64,
+        rh-amazon-rhui-client-2.2.118-1.el7.noarch, libffi-3.0.13-18.el7.x86_64, tuned-2.7.1-3.el7.noarch,
+        pkgconfig-0.27.1-4.el7.x86_64, audit-2.6.5-3.el7.x86_64, libgpg-error-1.12-3.el7.x86_64,
+        chrony-2.1.1-3.el7.x86_64, libattr-2.4.46-12.el7.x86_64, rsync-3.0.9-17.el7.x86_64,
+        libcap-2.22-8.el7.x86_64, subscription-manager-1.17.15-1.el7.x86_64, sqlite-3.7.17-8.el7.x86_64,
+        dracut-config-rescue-033-463.el7.x86_64, p11-kit-0.20.7-3.el7.x86_64, yum-utils-1.1.31-40.el7.noarch,
+        lua-5.1.4-15.el7.x86_64, redhat-support-tool-0.9.8-6.el7.noarch, diffutils-3.3-4.el7.x86_64,
+        authconfig-6.2.8-14.el7.x86_64, jansson-2.4-6.el7.x86_64, sudo-1.8.6p7-20.el7.x86_64,
+        which-2.20-7.el7.x86_64, man-db-2.6.3-9.el7.x86_64, file-libs-5.11-33.el7.x86_64,
+        xfsprogs-4.5.0-8.el7.x86_64, gmp-6.0.0-12.el7_1.x86_64, gdisk-0.8.6-5.el7.x86_64,
+        libnl3-cli-3.2.28-2.el7.x86_64, rootfiles-8.1-11.el7.noarch, libassuan-2.1.0-3.el7.x86_64,
+        iwl7265-firmware-22.0.7.0-49.el7.noarch, gobject-introspection-1.42.0-1.el7.x86_64,
+        gpg-pubkey-2fa658e0-45700c69, e2fsprogs-libs-1.42.9-9.el7.x86_64, kmod-libs-20-9.el7.x86_64,
+        libunistring-0.9.3-9.el7.x86_64, libedit-3.0-12.20121213cvs.el7.x86_64, p11-kit-trust-0.20.7-3.el7.x86_64,
+        pciutils-libs-3.5.1-1.el7.x86_64, slang-2.2.4-11.el7.x86_64, dmidecode-3.0-2.el7.x86_64,
+        lzo-2.06-8.el7.x86_64, keyutils-libs-1.5.8-3.el7.x86_64, gdbm-1.10-8.el7.x86_64,
+        iptables-1.4.21-17.el7.x86_64, gettext-libs-0.18.2.1-4.el7.x86_64, libteam-1.25-4.el7.x86_64,
+        dbus-glib-0.100-7.el7.x86_64, tar-1.26-31.el7.x86_64, vim-minimal-7.4.160-1.el7.x86_64,
+        desktop-file-utils-0.22-1.el7.x86_64, libdb-utils-5.3.21-19.el7.x86_64, mozjs17-17.0.0-19.el7.x86_64,
+        make-3.82-23.el7.x86_64, libselinux-utils-2.5-6.el7.x86_64, ncurses-5.9-13.20130511.el7.x86_64,
+        libmodman-2.0.1-8.el7.x86_64, snappy-1.1.0-3.el7.x86_64, pth-2.0.7-23.el7.x86_64,
+        numactl-libs-2.0.9-6.el7_2.x86_64, ustr-1.0.4-16.el7.x86_64, checkpolicy-2.5-4.el7.x86_64,
+        libndp-1.2-7.el7.x86_64, teamd-1.25-4.el7.x86_64, libpipeline-1.2.3-3.el7.x86_64,
+        coreutils-8.22-18.el7.x86_64, openssl-libs-1.0.1e-60.el7.x86_64, python-2.7.5-48.el7.x86_64,
+        libblkid-2.23.2-33.el7.x86_64, python-iniparse-0.4-9.el7.noarch, gzip-1.5-8.el7.x86_64,
+        python-decorator-3.4.0-3.el7.noarch, newt-python-0.52.15-4.el7.x86_64, libselinux-python-2.5-6.el7.x86_64,
+        libpwquality-1.2.3-4.el7.x86_64, systemd-libs-219-30.el7.x86_64, procps-ng-3.3.10-10.el7.x86_64,
+        python-lxml-3.2.1-4.el7.x86_64, python-configobj-4.7.2-7.el7.noarch, python-dmidecode-3.10.13-11.el7.x86_64,
+        python-chardet-2.2.1-1.el7_1.noarch, python-pyudev-0.15-7.el7_2.1.noarch,
+        e2fsprogs-1.42.9-9.el7.x86_64, libutempter-1.1.6-4.el7.x86_64, pygobject2-2.28.6-11.el7.x86_64,
+        yum-metadata-parser-1.1.4-10.el7.x86_64, python-jsonpointer-1.9-2.el7.noarch,
+        pyliblzma-0.5.3-11.el7.x86_64, python-six-1.9.0-2.el7.noarch, python-magic-5.11-33.el7.noarch,
+        python-backports-ssl_match_hostname-3.4.0.2-4.el7.noarch, python-requests-2.6.0-1.el7_1.noarch,
+        pyOpenSSL-0.13.1-3.el7.x86_64, python-perf-3.10.0-514.el7.x86_64, mariadb-libs-5.5.52-1.el7.x86_64,
+        fipscheck-lib-1.4.1-5.el7.x86_64, xdg-utils-1.1.0-0.17.20120809git.el7.noarch,
+        nss-3.21.0-17.el7.x86_64, nss-tools-3.21.0-17.el7.x86_64, curl-7.29.0-35.el7.x86_64,
+        rpm-4.11.3-21.el7.x86_64, libuser-0.60-7.el7_1.x86_64, policycoreutils-2.5-8.el7.x86_64,
+        openssh-6.6.1p1-31.el7.x86_64, dhcp-libs-4.2.5-47.el7.x86_64, rpm-build-libs-4.11.3-21.el7.x86_64,
+        redhat-support-lib-python-0.9.7-6.el7.noarch, gpgme-1.3.2-5.el7.x86_64, selinux-policy-3.13.1-102.el7.noarch,
+        usermode-1.111-5.el7.x86_64, python-urlgrabber-3.10-8.el7.noarch, logrotate-3.8.6-12.el7.x86_64,
+        redhat-logos-70.0.3-6.el7.noarch, PyYAML-3.10-11.el7.x86_64, kpartx-0.4.9-99.el7.x86_64,
+        device-mapper-libs-1.02.135-1.el7.x86_64, dracut-033-463.el7.x86_64, systemd-219-30.el7.x86_64,
+        systemd-sysv-219-30.el7.x86_64, polkit-pkla-compat-0.1-4.el7.x86_64, initscripts-9.49.37-1.el7.x86_64,
+        os-prober-1.58-9.el7.x86_64, cronie-1.4.11-14.el7_2.1.x86_64, grub2-tools-2.02-0.44.el7.x86_64,
+        rhn-client-tools-2.0.2-8.el7.noarch, libgcc-4.8.5-11.el7.x86_64, rhn-setup-2.0.2-8.el7.noarch,
+        setup-2.8.71-7.el7.noarch, rhn-check-2.0.2-8.el7.noarch, tzdata-2016g-2.el7.noarch,
+        dnsmasq-2.66-21.el7.x86_64, python-rhsm-certificates-1.17.9-1.el7.x86_64,
+        ppp-2.4.5-33.el7.x86_64, ncurses-base-5.9-13.20130511.el7.noarch, policycoreutils-python-2.5-8.el7.x86_64,
+        glibc-common-2.17-157.el7.x86_64, gnutls-3.3.24-1.el7.x86_64, libstdc++-4.8.5-11.el7.x86_64,
+        libsoup-2.48.1-6.el7.x86_64, bash-4.2.46-20.el7_2.x86_64, net-tools-2.0-0.17.20131004git.el7.x86_64,
+        pcre-8.32-15.el7_2.1.x86_64, libestr-0.1.9-2.el7.x86_64, zlib-1.2.7-17.el7.x86_64,
+        bind-license-9.9.4-37.el7.noarch, xz-libs-5.2.2-1.el7.x86_64, dhclient-4.2.5-47.el7.x86_64,
+        popt-1.13-16.el7.x86_64, dracut-network-033-463.el7.x86_64, sed-4.2.2-5.el7.x86_64,
+        bzip2-libs-1.0.6-13.el7.x86_64, nss-util-3.21.0-2.2.el7_2.x86_64, kbd-1.15.5-12.el7.x86_64,
+        libdb-5.3.21-19.el7.x86_64, NetworkManager-team-1.4.0-12.el7.x86_64, gawk-4.0.2-4.el7.x86_64,
+        rsyslog-7.4.7-16.el7.x86_64, audit-libs-2.6.5-3.el7.x86_64, rdma-7.3_4.7_rc2-5.el7.noarch,
+        elfutils-libelf-0.166-2.el7.x86_64, grub2-2.02-0.44.el7.x86_64, glib2-2.46.2-4.el7.x86_64,
+        postfix-2.10.1-6.el7.x86_64, shared-mime-info-1.1-9.el7.x86_64, irqbalance-1.0.7-6.el7.x86_64,
+        libgcrypt-1.5.3-12.el7_1.1.x86_64, openssh-server-6.6.1p1-31.el7.x86_64, libacl-2.2.51-12.el7.x86_64,
+        microcode_ctl-2.1-16.el7.x86_64, dbus-libs-1.6.12-17.el7.x86_64, dracut-config-generic-033-463.el7.x86_64,
+        libnl3-3.2.28-2.el7.x86_64, parted-3.1-28.el7.x86_64, elfutils-libs-0.166-2.el7.x86_64,
+        selinux-policy-targeted-3.13.1-102.el7.noarch, cpio-2.11-24.el7.x86_64, openssh-clients-6.6.1p1-31.el7.x86_64,
+        expat-2.1.0-8.el7.x86_64, cloud-utils-growpart-0.27-13.el7.noarch, libidn-1.28-4.el7.x86_64,
+        Red_Hat_Enterprise_Linux-Release_Notes-7-en-US-7-2.el7.noarch, findutils-4.5.11-5.el7.x86_64,
+        btrfs-progs-4.4.1-1.el7.x86_64, file-5.11-33.el7.x86_64, kernel-tools-3.10.0-514.el7.x86_64,
+        libmnl-1.0.3-7.el7.x86_64, libsysfs-2.1.0-16.el7.x86_64, nss-softokn-3.16.2.3-14.4.el7.x86_64,
+        NetworkManager-config-server-1.4.0-12.el7.x86_64, libcroco-0.6.8-5.el7.x86_64,
+        gpg-pubkey-fd431d51-4ae0493b, cyrus-sasl-lib-2.1.26-20.el7_2.x86_64, xdelta-3.0.7-4.el7.x86_64,
+        groff-base-1.22.2-8.el7.x86_64, xz-5.2.2-1.el7.x86_64, libgomp-4.8.5-11.el7.x86_64,
+        libtasn1-3.8-3.el7.x86_64, ca-certificates-2015.2.6-73.el7.noarch, libnfnetlink-1.0.1-4.el7.x86_64,
+        newt-0.52.15-4.el7.x86_64, tcp_wrappers-libs-7.6-77.el7.x86_64, hostname-3.13-3.el7.x86_64,
+        ethtool-4.5-3.el7.x86_64, libnetfilter_conntrack-1.0.4-2.el7.x86_64, iproute-3.10.0-74.el7.x86_64,
+        less-458-9.el7.x86_64, nettle-2.7.1-8.el7.x86_64, setools-libs-3.3.8-1.1.el7.x86_64,
+        acl-2.2.51-12.el7.x86_64, libxslt-1.1.28-5.el7.x86_64, gsettings-desktop-schemas-3.14.2-1.el7.x86_64,
+        libss-1.42.9-9.el7.x86_64, pinentry-0.8.1-17.el7.x86_64, GeoIP-1.5.0-11.el7.x86_64,
+        freetype-2.4.11-12.el7.x86_64, libicu-50.1.2-15.el7.x86_64, libproxy-0.4.11-10.el7.x86_64,
+        sysvinit-tools-2.88-14.dsf.el7.x86_64, libpcap-1.5.3-8.el7.x86_64, libnl-1.1.4-3.el7.x86_64,
+        libsemanage-2.5-4.el7.x86_64, kernel-tools-libs-3.10.0-514.el7.x86_64, libdaemon-0.14-7.el7.x86_64,
+        qrencode-libs-3.4.1-3.el7.x86_64, libverto-0.2.5-4.el7.x86_64, krb5-libs-1.14.1-26.el7.x86_64,
+        python-libs-2.7.5-48.el7.x86_64, shadow-utils-4.1.5.1-24.el7.x86_64, dbus-python-1.1.1-9.el7.x86_64,
+        python-dateutil-1.5-7.el7.noarch, cracklib-2.9.0-11.el7.x86_64, m2crypto-0.21.1-17.el7.x86_64,
+        pygobject3-base-3.14.0-3.el7.x86_64, cracklib-dicts-2.9.0-11.el7.x86_64, pam-1.1.8-18.el7.x86_64,
+        libgudev1-219-30.el7.x86_64, libmount-2.23.2-33.el7.x86_64, gettext-0.18.2.1-4.el7.x86_64,
+        libxml2-python-2.9.1-6.el7_2.3.x86_64, python-ethtool-0.8-5.el7.x86_64, python-kitchen-1.1.1-5.el7.noarch,
+        grubby-8.28-18.el7.x86_64, python-IPy-0.75-6.el7.noarch, python-gudev-147.2-7.el7.x86_64,
+        audit-libs-python-2.6.5-3.el7.x86_64, python-jsonpatch-1.2-2.el7.noarch, libsemanage-python-2.5-4.el7.x86_64,
+        python-prettytable-0.7.2-1.el7.noarch, python-backports-1.0-8.el7.x86_64,
+        python-urllib3-1.10.2-2.el7_1.noarch, pyxattr-0.5.1-5.el7.x86_64, rhnlib-2.5.65-2.el7.noarch,
+        openssl-1.0.1e-60.el7.x86_64, libssh2-1.4.3-10.el7_2.1.x86_64, fipscheck-1.4.1-5.el7.x86_64,
+        nss-sysinit-3.21.0-17.el7.x86_64, NetworkManager-libnm-1.4.0-12.el7.x86_64,
+        libcurl-7.29.0-35.el7.x86_64, rpm-libs-4.11.3-21.el7.x86_64, openldap-2.4.40-13.el7.x86_64,
+        util-linux-2.23.2-33.el7.x86_64, gnupg2-2.0.22-4.el7.x86_64, virt-what-1.13-8.el7.x86_64,
+        dhcp-common-4.2.5-47.el7.x86_64, rpm-python-4.11.3-21.el7.x86_64, python-rhsm-1.17.9-1.el7.x86_64,
+        pygpgme-0.3-9.el7.x86_64, passwd-0.79-4.el7.x86_64, python-pycurl-7.19.0-19.el7.x86_64,
+        yum-3.4.3-150.el7.noarch, binutils-2.25.1-22.base.el7.x86_64, libyaml-0.1.4-11.el7_0.x86_64,
+        hardlink-1.0-19.el7.x86_64, device-mapper-1.02.135-1.el7.x86_64, cryptsetup-libs-1.7.2-1.el7.x86_64,
+        kmod-20-9.el7.x86_64, dbus-1.6.12-17.el7.x86_64, polkit-0.112-9.el7.x86_64,
+        iputils-20160308-8.el7.x86_64, hwdata-0.252-8.4.el7.x86_64, cronie-anacron-1.4.11-14.el7_2.1.x86_64,
+        crontabs-1.11-6.20121102git.el7.noarch, python-hwdata-1.7.3-4.el7.noarch]
+    - {comment: Failed to get package set, result: failed}
+    name: testcase_99_packagelist
+    result: failed
+    stage: stage0
+    start_time: 1490285787.616148
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285788.212583
+    exception: null
+    log:
+    - required_packages: [ipa-python-3.0.0-47.el6_7.2, libtalloc-2.1.5-1.el6_7, libtdb-1.3.8-1.el6_7,
+        libtevent-0.9.26-2.el6_7]
+    - {package NOT found: ipa-python-3.0.0-47.el6_7.2}
+    - {package NOT found: libtalloc-2.1.5-1.el6_7}
+    - {package NOT found: libtdb-1.3.8-1.el6_7}
+    - {package NOT found: libtevent-0.9.26-2.el6_7}
+    - comment: [rhnsd-5.0.13-5.el7.x86_64, redhat-release-server-7.3-7.el7.x86_64,
+        yum-rhn-plugin-2.0.1-6.el7.noarch, filesystem-3.2-21.el7.x86_64, pciutils-3.5.1-1.el7.x86_64,
+        basesystem-10.0-7.el7.noarch, wpa_supplicant-2.0-20.el7.x86_64, emacs-filesystem-24.3-18.el7.noarch,
+        libcgroup-0.41-11.el7.x86_64, nss-softokn-freebl-3.16.2.3-14.4.el7.x86_64,
+        trousers-0.3.13-1.el7.x86_64, glibc-2.17-157.el7.x86_64, glib-networking-2.42.0-1.el7.x86_64,
+        ncurses-libs-5.9-13.20130511.el7.x86_64, libsepol-2.5-6.el7.x86_64, json-c-0.11-4.el7_0.x86_64,
+        libselinux-2.5-6.el7.x86_64, kbd-misc-1.15.5-12.el7.noarch, info-5.1-4.el7.x86_64,
+        bind-libs-lite-9.9.4-37.el7.x86_64, libuuid-2.23.2-33.el7.x86_64, NetworkManager-1.4.0-12.el7.x86_64,
+        chkconfig-1.7.2-1.el7.x86_64, kbd-legacy-1.15.5-12.el7.noarch, nspr-4.11.0-1.el7_2.x86_64,
+        libcom_err-1.42.9-9.el7.x86_64, kernel-3.10.0-514.el7.x86_64, libxml2-2.9.1-6.el7_2.3.x86_64,
+        kexec-tools-2.0.7-50.el7.x86_64, grep-2.20-2.el7.x86_64, NetworkManager-tui-1.4.0-12.el7.x86_64,
+        libcap-ng-0.7.5-4.el7.x86_64, cloud-init-0.7.6-2.el7.x86_64, readline-6.2-9.el7.x86_64,
+        rh-amazon-rhui-client-2.2.118-1.el7.noarch, libffi-3.0.13-18.el7.x86_64, tuned-2.7.1-3.el7.noarch,
+        pkgconfig-0.27.1-4.el7.x86_64, audit-2.6.5-3.el7.x86_64, libgpg-error-1.12-3.el7.x86_64,
+        chrony-2.1.1-3.el7.x86_64, libattr-2.4.46-12.el7.x86_64, rsync-3.0.9-17.el7.x86_64,
+        libcap-2.22-8.el7.x86_64, subscription-manager-1.17.15-1.el7.x86_64, sqlite-3.7.17-8.el7.x86_64,
+        dracut-config-rescue-033-463.el7.x86_64, p11-kit-0.20.7-3.el7.x86_64, yum-utils-1.1.31-40.el7.noarch,
+        lua-5.1.4-15.el7.x86_64, redhat-support-tool-0.9.8-6.el7.noarch, diffutils-3.3-4.el7.x86_64,
+        authconfig-6.2.8-14.el7.x86_64, jansson-2.4-6.el7.x86_64, sudo-1.8.6p7-20.el7.x86_64,
+        which-2.20-7.el7.x86_64, man-db-2.6.3-9.el7.x86_64, file-libs-5.11-33.el7.x86_64,
+        xfsprogs-4.5.0-8.el7.x86_64, gmp-6.0.0-12.el7_1.x86_64, gdisk-0.8.6-5.el7.x86_64,
+        libnl3-cli-3.2.28-2.el7.x86_64, rootfiles-8.1-11.el7.noarch, libassuan-2.1.0-3.el7.x86_64,
+        iwl7265-firmware-22.0.7.0-49.el7.noarch, gobject-introspection-1.42.0-1.el7.x86_64,
+        gpg-pubkey-2fa658e0-45700c69, e2fsprogs-libs-1.42.9-9.el7.x86_64, kmod-libs-20-9.el7.x86_64,
+        libunistring-0.9.3-9.el7.x86_64, libedit-3.0-12.20121213cvs.el7.x86_64, p11-kit-trust-0.20.7-3.el7.x86_64,
+        pciutils-libs-3.5.1-1.el7.x86_64, slang-2.2.4-11.el7.x86_64, dmidecode-3.0-2.el7.x86_64,
+        lzo-2.06-8.el7.x86_64, keyutils-libs-1.5.8-3.el7.x86_64, gdbm-1.10-8.el7.x86_64,
+        iptables-1.4.21-17.el7.x86_64, gettext-libs-0.18.2.1-4.el7.x86_64, libteam-1.25-4.el7.x86_64,
+        dbus-glib-0.100-7.el7.x86_64, tar-1.26-31.el7.x86_64, vim-minimal-7.4.160-1.el7.x86_64,
+        desktop-file-utils-0.22-1.el7.x86_64, libdb-utils-5.3.21-19.el7.x86_64, mozjs17-17.0.0-19.el7.x86_64,
+        make-3.82-23.el7.x86_64, libselinux-utils-2.5-6.el7.x86_64, ncurses-5.9-13.20130511.el7.x86_64,
+        libmodman-2.0.1-8.el7.x86_64, snappy-1.1.0-3.el7.x86_64, pth-2.0.7-23.el7.x86_64,
+        numactl-libs-2.0.9-6.el7_2.x86_64, ustr-1.0.4-16.el7.x86_64, checkpolicy-2.5-4.el7.x86_64,
+        libndp-1.2-7.el7.x86_64, teamd-1.25-4.el7.x86_64, libpipeline-1.2.3-3.el7.x86_64,
+        coreutils-8.22-18.el7.x86_64, openssl-libs-1.0.1e-60.el7.x86_64, python-2.7.5-48.el7.x86_64,
+        libblkid-2.23.2-33.el7.x86_64, python-iniparse-0.4-9.el7.noarch, gzip-1.5-8.el7.x86_64,
+        python-decorator-3.4.0-3.el7.noarch, newt-python-0.52.15-4.el7.x86_64, libselinux-python-2.5-6.el7.x86_64,
+        libpwquality-1.2.3-4.el7.x86_64, systemd-libs-219-30.el7.x86_64, procps-ng-3.3.10-10.el7.x86_64,
+        python-lxml-3.2.1-4.el7.x86_64, python-configobj-4.7.2-7.el7.noarch, python-dmidecode-3.10.13-11.el7.x86_64,
+        python-chardet-2.2.1-1.el7_1.noarch, python-pyudev-0.15-7.el7_2.1.noarch,
+        e2fsprogs-1.42.9-9.el7.x86_64, libutempter-1.1.6-4.el7.x86_64, pygobject2-2.28.6-11.el7.x86_64,
+        yum-metadata-parser-1.1.4-10.el7.x86_64, python-jsonpointer-1.9-2.el7.noarch,
+        pyliblzma-0.5.3-11.el7.x86_64, python-six-1.9.0-2.el7.noarch, python-magic-5.11-33.el7.noarch,
+        python-backports-ssl_match_hostname-3.4.0.2-4.el7.noarch, python-requests-2.6.0-1.el7_1.noarch,
+        pyOpenSSL-0.13.1-3.el7.x86_64, python-perf-3.10.0-514.el7.x86_64, mariadb-libs-5.5.52-1.el7.x86_64,
+        fipscheck-lib-1.4.1-5.el7.x86_64, xdg-utils-1.1.0-0.17.20120809git.el7.noarch,
+        nss-3.21.0-17.el7.x86_64, nss-tools-3.21.0-17.el7.x86_64, curl-7.29.0-35.el7.x86_64,
+        rpm-4.11.3-21.el7.x86_64, libuser-0.60-7.el7_1.x86_64, policycoreutils-2.5-8.el7.x86_64,
+        openssh-6.6.1p1-31.el7.x86_64, dhcp-libs-4.2.5-47.el7.x86_64, rpm-build-libs-4.11.3-21.el7.x86_64,
+        redhat-support-lib-python-0.9.7-6.el7.noarch, gpgme-1.3.2-5.el7.x86_64, selinux-policy-3.13.1-102.el7.noarch,
+        usermode-1.111-5.el7.x86_64, python-urlgrabber-3.10-8.el7.noarch, logrotate-3.8.6-12.el7.x86_64,
+        redhat-logos-70.0.3-6.el7.noarch, PyYAML-3.10-11.el7.x86_64, kpartx-0.4.9-99.el7.x86_64,
+        device-mapper-libs-1.02.135-1.el7.x86_64, dracut-033-463.el7.x86_64, systemd-219-30.el7.x86_64,
+        systemd-sysv-219-30.el7.x86_64, polkit-pkla-compat-0.1-4.el7.x86_64, initscripts-9.49.37-1.el7.x86_64,
+        os-prober-1.58-9.el7.x86_64, cronie-1.4.11-14.el7_2.1.x86_64, grub2-tools-2.02-0.44.el7.x86_64,
+        rhn-client-tools-2.0.2-8.el7.noarch, libgcc-4.8.5-11.el7.x86_64, rhn-setup-2.0.2-8.el7.noarch,
+        setup-2.8.71-7.el7.noarch, rhn-check-2.0.2-8.el7.noarch, tzdata-2016g-2.el7.noarch,
+        dnsmasq-2.66-21.el7.x86_64, python-rhsm-certificates-1.17.9-1.el7.x86_64,
+        ppp-2.4.5-33.el7.x86_64, ncurses-base-5.9-13.20130511.el7.noarch, policycoreutils-python-2.5-8.el7.x86_64,
+        glibc-common-2.17-157.el7.x86_64, gnutls-3.3.24-1.el7.x86_64, libstdc++-4.8.5-11.el7.x86_64,
+        libsoup-2.48.1-6.el7.x86_64, bash-4.2.46-20.el7_2.x86_64, net-tools-2.0-0.17.20131004git.el7.x86_64,
+        pcre-8.32-15.el7_2.1.x86_64, libestr-0.1.9-2.el7.x86_64, zlib-1.2.7-17.el7.x86_64,
+        bind-license-9.9.4-37.el7.noarch, xz-libs-5.2.2-1.el7.x86_64, dhclient-4.2.5-47.el7.x86_64,
+        popt-1.13-16.el7.x86_64, dracut-network-033-463.el7.x86_64, sed-4.2.2-5.el7.x86_64,
+        bzip2-libs-1.0.6-13.el7.x86_64, nss-util-3.21.0-2.2.el7_2.x86_64, kbd-1.15.5-12.el7.x86_64,
+        libdb-5.3.21-19.el7.x86_64, NetworkManager-team-1.4.0-12.el7.x86_64, gawk-4.0.2-4.el7.x86_64,
+        rsyslog-7.4.7-16.el7.x86_64, audit-libs-2.6.5-3.el7.x86_64, rdma-7.3_4.7_rc2-5.el7.noarch,
+        elfutils-libelf-0.166-2.el7.x86_64, grub2-2.02-0.44.el7.x86_64, glib2-2.46.2-4.el7.x86_64,
+        postfix-2.10.1-6.el7.x86_64, shared-mime-info-1.1-9.el7.x86_64, irqbalance-1.0.7-6.el7.x86_64,
+        libgcrypt-1.5.3-12.el7_1.1.x86_64, openssh-server-6.6.1p1-31.el7.x86_64, libacl-2.2.51-12.el7.x86_64,
+        microcode_ctl-2.1-16.el7.x86_64, dbus-libs-1.6.12-17.el7.x86_64, dracut-config-generic-033-463.el7.x86_64,
+        libnl3-3.2.28-2.el7.x86_64, parted-3.1-28.el7.x86_64, elfutils-libs-0.166-2.el7.x86_64,
+        selinux-policy-targeted-3.13.1-102.el7.noarch, cpio-2.11-24.el7.x86_64, openssh-clients-6.6.1p1-31.el7.x86_64,
+        expat-2.1.0-8.el7.x86_64, cloud-utils-growpart-0.27-13.el7.noarch, libidn-1.28-4.el7.x86_64,
+        Red_Hat_Enterprise_Linux-Release_Notes-7-en-US-7-2.el7.noarch, findutils-4.5.11-5.el7.x86_64,
+        btrfs-progs-4.4.1-1.el7.x86_64, file-5.11-33.el7.x86_64, kernel-tools-3.10.0-514.el7.x86_64,
+        libmnl-1.0.3-7.el7.x86_64, libsysfs-2.1.0-16.el7.x86_64, nss-softokn-3.16.2.3-14.4.el7.x86_64,
+        NetworkManager-config-server-1.4.0-12.el7.x86_64, libcroco-0.6.8-5.el7.x86_64,
+        gpg-pubkey-fd431d51-4ae0493b, cyrus-sasl-lib-2.1.26-20.el7_2.x86_64, xdelta-3.0.7-4.el7.x86_64,
+        groff-base-1.22.2-8.el7.x86_64, xz-5.2.2-1.el7.x86_64, libgomp-4.8.5-11.el7.x86_64,
+        libtasn1-3.8-3.el7.x86_64, ca-certificates-2015.2.6-73.el7.noarch, libnfnetlink-1.0.1-4.el7.x86_64,
+        newt-0.52.15-4.el7.x86_64, tcp_wrappers-libs-7.6-77.el7.x86_64, hostname-3.13-3.el7.x86_64,
+        ethtool-4.5-3.el7.x86_64, libnetfilter_conntrack-1.0.4-2.el7.x86_64, iproute-3.10.0-74.el7.x86_64,
+        less-458-9.el7.x86_64, nettle-2.7.1-8.el7.x86_64, setools-libs-3.3.8-1.1.el7.x86_64,
+        acl-2.2.51-12.el7.x86_64, libxslt-1.1.28-5.el7.x86_64, gsettings-desktop-schemas-3.14.2-1.el7.x86_64,
+        libss-1.42.9-9.el7.x86_64, pinentry-0.8.1-17.el7.x86_64, GeoIP-1.5.0-11.el7.x86_64,
+        freetype-2.4.11-12.el7.x86_64, libicu-50.1.2-15.el7.x86_64, libproxy-0.4.11-10.el7.x86_64,
+        sysvinit-tools-2.88-14.dsf.el7.x86_64, libpcap-1.5.3-8.el7.x86_64, libnl-1.1.4-3.el7.x86_64,
+        libsemanage-2.5-4.el7.x86_64, kernel-tools-libs-3.10.0-514.el7.x86_64, libdaemon-0.14-7.el7.x86_64,
+        qrencode-libs-3.4.1-3.el7.x86_64, libverto-0.2.5-4.el7.x86_64, krb5-libs-1.14.1-26.el7.x86_64,
+        python-libs-2.7.5-48.el7.x86_64, shadow-utils-4.1.5.1-24.el7.x86_64, dbus-python-1.1.1-9.el7.x86_64,
+        python-dateutil-1.5-7.el7.noarch, cracklib-2.9.0-11.el7.x86_64, m2crypto-0.21.1-17.el7.x86_64,
+        pygobject3-base-3.14.0-3.el7.x86_64, cracklib-dicts-2.9.0-11.el7.x86_64, pam-1.1.8-18.el7.x86_64,
+        libgudev1-219-30.el7.x86_64, libmount-2.23.2-33.el7.x86_64, gettext-0.18.2.1-4.el7.x86_64,
+        libxml2-python-2.9.1-6.el7_2.3.x86_64, python-ethtool-0.8-5.el7.x86_64, python-kitchen-1.1.1-5.el7.noarch,
+        grubby-8.28-18.el7.x86_64, python-IPy-0.75-6.el7.noarch, python-gudev-147.2-7.el7.x86_64,
+        audit-libs-python-2.6.5-3.el7.x86_64, python-jsonpatch-1.2-2.el7.noarch, libsemanage-python-2.5-4.el7.x86_64,
+        python-prettytable-0.7.2-1.el7.noarch, python-backports-1.0-8.el7.x86_64,
+        python-urllib3-1.10.2-2.el7_1.noarch, pyxattr-0.5.1-5.el7.x86_64, rhnlib-2.5.65-2.el7.noarch,
+        openssl-1.0.1e-60.el7.x86_64, libssh2-1.4.3-10.el7_2.1.x86_64, fipscheck-1.4.1-5.el7.x86_64,
+        nss-sysinit-3.21.0-17.el7.x86_64, NetworkManager-libnm-1.4.0-12.el7.x86_64,
+        libcurl-7.29.0-35.el7.x86_64, rpm-libs-4.11.3-21.el7.x86_64, openldap-2.4.40-13.el7.x86_64,
+        util-linux-2.23.2-33.el7.x86_64, gnupg2-2.0.22-4.el7.x86_64, virt-what-1.13-8.el7.x86_64,
+        dhcp-common-4.2.5-47.el7.x86_64, rpm-python-4.11.3-21.el7.x86_64, python-rhsm-1.17.9-1.el7.x86_64,
+        pygpgme-0.3-9.el7.x86_64, passwd-0.79-4.el7.x86_64, python-pycurl-7.19.0-19.el7.x86_64,
+        yum-3.4.3-150.el7.noarch, binutils-2.25.1-22.base.el7.x86_64, libyaml-0.1.4-11.el7_0.x86_64,
+        hardlink-1.0-19.el7.x86_64, device-mapper-1.02.135-1.el7.x86_64, cryptsetup-libs-1.7.2-1.el7.x86_64,
+        kmod-20-9.el7.x86_64, dbus-1.6.12-17.el7.x86_64, polkit-0.112-9.el7.x86_64,
+        iputils-20160308-8.el7.x86_64, hwdata-0.252-8.4.el7.x86_64, cronie-anacron-1.4.11-14.el7_2.1.x86_64,
+        crontabs-1.11-6.20121102git.el7.noarch, python-hwdata-1.7.3-4.el7.noarch]
+    - {comment: Failed to get package set, result: failed}
+    name: testcase_99_package_version_check
+    result: failed
+    stage: stage0
+    start_time: 1490285787.610371
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285880.742217
+    exception: null
+    log:
+    - {command: passwd -S root | grep -q LK, result: passed}
+    name: testcase_39_root_is_locked
+    result: passed
+    stage: stage1
+    start_time: 1490285879.511368
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285881.662061
+    exception: null
+    log:
+    - {command: rpm -qa rh-amazon-rhui-client\*, result: passed, value: rh-amazon-rhui-client-2.2.118-1.el7.noarch}
+    name: testcase_41_rh_amazon_rhui_client
+    result: passed
+    stage: stage1
+    start_time: 1490285879.543815
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285880.768794
+    exception: null
+    log:
+    - {command: '[ ! -f /etc/sysconfig/rhn/systemid ]', result: passed}
+    name: testcase_19_rhn_system_id
+    result: passed
+    stage: stage1
+    start_time: 1490285879.537839
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285880.764077
+    exception: null
+    log:
+    - {command: test -f /etc/ld.so.conf.d/libc6-xen.conf, result: passed}
+    name: testcase_07_libc6_xen_conf
+    result: passed
+    stage: stage1
+    start_time: 1490285879.534673
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285884.749514
+    exception: null
+    log:
+    - {command: 'restorecon -R -v -n -e /mnt -e /proc -e /sys | sed -e ''s, context
+        , ,'' -e ''s,^restorecon reset ,,''  > /tmp/restorecon_output.txt && echo
+        SUCCESS', expectation: "\r\nSUCCESS\r\n", result: passed}
+    - {comment: No new or lost entries detected. Restorecon output file matches with
+        the list of allowed SElinux context discrepancies., result: passed}
+    name: testcase_02_selinux_context
+    result: passed
+    stage: stage1
+    start_time: 1490285883.162973
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285884.538626
+    exception: null
+    log:
+    - {command: 'grep --color=none ''MemTotal:'' /proc/meminfo', match: '.*\r\nMemTotal:\s*([0-9]+) ',
+      result: passed, value: '[''14972588'']'}
+    - {command: '[ 14972588 -gt 14000000 ]', result: passed}
+    name: testcase_08_memory
+    result: passed
+    stage: stage1
+    start_time: 1490285883.188598
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285883.186903
+    exception: null
+    log:
+    - {comment: unsupported region and/or platform-version combination, result: skip}
+    name: testcase_03_running_services
+    result: passed
+    stage: stage1
+    start_time: 1490285883.176625
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285886.553378
+    exception: null
+    log:
+    - {command: cat /proc/cmdline | grep -v -i quiet, result: passed}
+    - {command: cat /proc/cmdline | grep -v -i rhgb, result: passed}
+    name: testcase_66_bug1122300_proc_cmdline
+    result: passed
+    stage: stage1
+    start_time: 1490285884.090185
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285890.832498
+    exception: null
+    log:
+    - {command: ping -c 5 google-public-dns-a.google.com | grep 8.8.8.8, result: passed}
+    name: testcase_09_nameserver
+    result: passed
+    stage: stage1
+    start_time: 1490285885.602013
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285907.63346
+    exception: null
+    log:
+    - {comment: unsupported region and/or platform-version combination, result: skip}
+    name: testcase_26_verify_rpms
+    result: passed
+    stage: stage1
+    start_time: 1490285886.953485
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285888.37423
+    exception: null
+    log:
+    - {command: md5sum /etc/audit/auditd.conf | cut -f 1 -d ' ', expectation: 643fcb75e59e330539c91678a2bb6454,
+      result: passed}
+    - {command: md5sum /etc/audit/audit.rules | cut -f 1 -d ' ', expectation: 6b6d7a773a63a2cef32341993ad66c8c,
+      result: passed}
+    name: testcase_20_auditd
+    result: passed
+    stage: stage1
+    start_time: 1490285887.136086
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285891.440296
+    exception: null
+    log:
+    - {command: df -h | grep 15G, result: passed}
+    name: testcase_13_resize2fs
+    result: passed
+    stage: stage1
+    start_time: 1490285888.978749
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285894.8344
+    exception: null
+    log:
+    - {command: 'mount | grep ''^/dev'' | awk ''{print $1}''', result: passed, value: "/dev/xvda2\r\n/dev/xvdf"}
+    - {command: '[ `df -k /dev/xvda2 | awk ''{ print $2 }'' | tail -n 1` -gt 3937219
+        ]', result: passed}
+    - {command: 'echo ''###'' ;mount | grep ''^/dev/xvda2'' | awk ''{print $3}'';
+        echo ''###''', match: ".*\r\n###\r\n(.*)\r\n###\r\n.*", result: passed, value: '[''/'']'}
+    - {command: 'echo ''###'' ;mount | grep ''^/dev/xvda2'' | awk ''{print $5}'';
+        echo ''###''', match: ".*\r\n###\r\n(.*)\r\n###\r\n.*", result: passed, value: '[''xfs'']'}
+    - {actual: xfs, expected: '/: xfs', result: passed}
+    - {command: '[ `df -k /dev/xvdf | awk ''{ print $2 }'' | tail -n 1` -gt 3937219
+        ]', result: passed}
+    - {command: 'echo ''###'' ;mount | grep ''^/dev/xvdf'' | awk ''{print $3}''; echo
+        ''###''', match: ".*\r\n###\r\n(.*)\r\n###\r\n.*", result: passed, value: '[''/mnt'']'}
+    - {command: 'echo ''###'' ;mount | grep ''^/dev/xvdf'' | awk ''{print $5}''; echo
+        ''###''', match: ".*\r\n###\r\n(.*)\r\n###\r\n.*", result: passed, value: '[''ext3'']'}
+    - {actual: ext3, expected: '/mnt: ext3', result: passed}
+    name: testcase_21_disk_size_format
+    result: passed
+    stage: stage1
+    start_time: 1490285890.783571
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285898.072045
+    exception: null
+    log:
+    - {command: getenforce, expectation: "\r\nEnforcing\r\n", result: passed}
+    - {command: grep '^SELINUX=enforcing' /etc/sysconfig/selinux, result: passed}
+    - {command: grep '^SELINUXTYPE=targeted' /etc/sysconfig/selinux, result: passed}
+    - {command: setenforce Permissive && getenforce, expectation: "\r\nPermissive\r\n",
+      result: passed}
+    - {command: setenforce Enforcing && getenforce, expectation: "\r\nEnforcing\r\n",
+      result: passed}
+    name: testcase_16_selinux
+    result: passed
+    stage: stage1
+    start_time: 1490285893.2547
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285895.068284
+    exception: null
+    log:
+    - {command: '[[ ! `ls -Z /etc/sysconfig/rh-cloud-firstboot | grep etc_t` ]]',
+      result: passed}
+    name: testcase_410_rh_cloud_firstboot
+    result: passed
+    stage: stage1
+    start_time: 1490285893.83836
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285898.45759
+    exception: null
+    log:
+    - {actual: '1', command: date | grep UTC, result: failed}
+    name: testcase_67_timezone
+    result: failed
+    stage: stage1
+    start_time: 1490285897.228733
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285898.68721
+    exception: null
+    log:
+    - {command: grep 'console=ttyS0' /proc/cmdline, result: passed}
+    name: testcase_35_console
+    result: passed
+    stage: stage1
+    start_time: 1490285897.458215
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285907.77237
+    exception: null
+    log:
+    - {command: '[ ! -z ''`curl http://169.254.169.254/latest/dynamic/instance-identity/signature`''
+        ]', result: passed}
+    - {command: 'curl http://169.254.169.254/latest/dynamic/instance-identity/document',
+      match: '.*({.*}).*', result: passed, value: '[''{\r\n  "privateIp" : "10.186.38.172",\r\n  "devpayProductCodes"
+        : null,\r\n  "availabilityZone" : "us-east-1c",\r\n  "version" : "2010-08-31",\r\n  "instanceId"
+        : "i-04d10cf4a3ba8839a",\r\n  "billingProducts" : [ "bp-6fa54006" ],\r\n  "pendingTime"
+        : "2017-03-23T16:14:42Z",\r\n  "instanceType" : "m3.xlarge",\r\n  "accountId"
+        : "567014786890",\r\n  "architecture" : "x86_64",\r\n  "kernelId" : null,\r\n  "ramdiskId"
+        : null,\r\n  "imageId" : "ami-b63769a1",\r\n  "region" : "us-east-1"\r\n}'']'}
+    - {command: '[ ''ami-b63769a1'' = ''ami-b63769a1'' ]', result: passed}
+    - {command: '[ ''x86_64'' = ''x86_64'' ]', result: passed}
+    - {command: '[ ''us-east-1'' = ''us-east-1'' ]', result: passed}
+    - {actual: '1', command: '[ ''bp-6fa54006'' = ''bp-63a5400a'' ]', result: failed}
+    name: testcase_14_host_details
+    result: failed
+    stage: stage1
+    start_time: 1490285900.504331
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285903.350462
+    exception: null
+    log:
+    - {command: grep 'bin/bash$' /etc/shells, result: passed}
+    - {command: grep 'bin/nologin$' /etc/shells, result: passed}
+    name: testcase_17_shells
+    result: passed
+    stage: stage1
+    start_time: 1490285900.888941
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285904.798012
+    exception: null
+    log:
+    - {command: rpm -ql rh-amazon-rhui-client, result: passed, value: "/etc/init.d/choose_repo\r\n/etc/init.d/rh-cloud-firstboot\r\n/etc/pki/rhui/cdn.redhat.com-chain.crt\r\n/etc/pki/rhui/content-rhel7.key\r\n/etc/pki/rhui/product/content-rhel7.crt\r\n/etc/pki/rhui/product/rhui-client-config-server-7.crt\r\n/etc/pki/rhui/rhui-client-config-server-7.key\r\n/etc/yum.repos.d/redhat-rhui-client-config.repo\r\n/etc/yum.repos.d/redhat-rhui.repo\r\n/etc/yum.repos.d/rhui-load-balancers.conf\r\n/etc/yum/pluginconf.d/amazon-id.conf\r\n/etc/yum/pluginconf.d/rhui-lb.conf\r\n/usr/lib/yum-plugins/amazon-id.py\r\n/usr/lib/yum-plugins/amazon-id.pyc\r\n/usr/lib/yum-plugins/amazon-id.pyo\r\n/usr/lib/yum-plugins/rhui-lb.py\r\n/usr/lib/yum-plugins/rhui-lb.pyc\r\n/usr/lib/yum-plugins/rhui-lb.pyo\r\n/usr/sbin/choose_repo.py\r\n/usr/sbin/rh-cloud-firstboot.py"}
+    - {command: openssl x509 -in /etc/pki/rhui/cdn.redhat.com-chain.crt -noout -dates,
+      result: passed, value: "notBefore=Mar 18 11:24:54 2010 GMT\r\nnotAfter=Mar 13
+        11:24:54 2030 GMT"}
+    - {comment: '(/etc/pki/rhui/cdn.redhat.com-chain.crt).notAfter=2030-03-13 11:24:54;
+        expecting: 2024-06-10 00:00:00', result: passed}
+    - {command: openssl x509 -in /etc/pki/rhui/product/content-rhel7.crt -noout -dates,
+      result: passed, value: "notBefore=Oct 16 17:36:24 2014 GMT\r\nnotAfter=Jun 10
+        17:36:24 2024 GMT"}
+    - {comment: '(/etc/pki/rhui/product/content-rhel7.crt).notAfter=2024-06-10 17:36:24;
+        expecting: 2024-06-10 00:00:00', result: passed}
+    - {command: openssl x509 -in /etc/pki/rhui/product/rhui-client-config-server-7.crt
+        -noout -dates, result: passed, value: "notBefore=Oct 16 17:20:39 2014 GMT\r\nnotAfter=Jun
+        10 17:20:39 2024 GMT"}
+    - {comment: '(/etc/pki/rhui/product/rhui-client-config-server-7.crt).notAfter=2024-06-10
+        17:20:39; expecting: 2024-06-10 00:00:00', result: passed}
+    name: testcase_30_rhn_certificates
+    result: passed
+    stage: stage1
+    start_time: 1490285902.125859
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285908.239999
+    exception: null
+    log:
+    - {command: grep "^NETWORKING=yes" /etc/sysconfig/network, result: passed}
+    - {command: egrep "^DEVICE=(|\")eth0(|\")" /etc/sysconfig/network-scripts/ifcfg-eth0,
+      result: passed}
+    name: testcase_10_networking
+    result: passed
+    stage: stage1
+    start_time: 1490285905.779646
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285909.670738
+    exception: null
+    log:
+    - {command: 'grep ^flags /proc/cpuinfo | grep "[^a-z0-9]avx[^a-z0-9]"', result: passed}
+    - {command: 'grep ^flags /proc/cpuinfo | grep "[^a-z0-9]xsave[^a-z0-9]"', result: passed}
+    name: testcase_62_cpuflags
+    result: passed
+    stage: stage1
+    start_time: 1490285907.207429
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285910.063093
+    exception: "Traceback (most recent call last):\n  File \"/usr/local/lib/python2.7/dist-packages/dva-0.6-py2.7.egg/dva/work/test.py\",
+      line 67, in test_execute\n    test_obj.test(con, params)\n  File \"/usr/local/lib/python2.7/dist-packages/dva-0.6-py2.7.egg/dva/test/testcase_11_package_set.py\",
+      line 39, in test\n    package_set_required = self.required_packages(params)\n
+      \ File \"/usr/local/lib/python2.7/dist-packages/dva-0.6-py2.7.egg/dva/test/testcase_11_package_set.py\",
+      line 31, in required_packages\n    with open(self.package_list_filename(params))
+      as fd:\n  File \"/usr/local/lib/python2.7/dist-packages/dva-0.6-py2.7.egg/dva/test/testcase_11_package_set.py\",
+      line 26, in package_list_filename\n    raise SkipException('packages list %s
+      not found' % path)\nSkipException: packages list /usr/share/dva/data/packages_rhel_cloud_7.3.yaml
+      not found\n"
+    log: []
+    name: testcase_11_package_set
+    result: skip
+    stage: stage1
+    start_time: 1490285910.062143
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285912.538125
+    exception: null
+    log:
+    - {command: 'rpm -q --qf ''%{VERSION}
+
+        '' --whatprovides redhat-release', match: '.*\r\n([0-9]\.[0-9]+)\r\n.*', result: passed,
+      value: '[''7.3'']'}
+    - {command: '[ ''7.3'' = ''7.3'' ]', result: passed}
+    name: testcase_15_rhel_version
+    result: passed
+    stage: stage1
+    start_time: 1490285910.184157
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285910.659741
+    exception: "Traceback (most recent call last):\n  File \"/usr/local/lib/python2.7/dist-packages/dva-0.6-py2.7.egg/dva/work/test.py\",
+      line 67, in test_execute\n    test_obj.test(con, params)\n  File \"/usr/local/lib/python2.7/dist-packages/dva-0.6-py2.7.egg/dva/test/testcase_63_sriov.py\",
+      line 46, in test\n    raise SkipException('unsupported instance HW type: %s'
+      % params['cloudhwname'])\nSkipException: unsupported instance HW type: m3.xlarge\n"
+    log: []
+    name: testcase_63_sriov
+    result: skip
+    stage: stage1
+    start_time: 1490285910.659329
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285948.94389
+    exception: null
+    log:
+    - {command: ls -l /dev/xvdk, result: passed}
+    - {command: ls -la /sbin/mkfs.vfat 2> /dev/null | wc -l, result: passed, value: '0'}
+    - {command: echo y | mkfs.ext3 /dev/xvdk, result: passed}
+    name: testcase_360_ebs
+    result: passed
+    stage: stage1
+    start_time: 1490285912.057996
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285940.712695
+    exception: null
+    log:
+    - actual repos: {rhui-REGION-client-config-server-7: true, rhui-REGION-rhel-server-debug-extras: false,
+        rhui-REGION-rhel-server-debug-optional: false, rhui-REGION-rhel-server-debug-rh-common: false,
+        rhui-REGION-rhel-server-debug-rhscl: false, rhui-REGION-rhel-server-debug-supplementary: false,
+        rhui-REGION-rhel-server-extras: false, rhui-REGION-rhel-server-optional: false,
+        rhui-REGION-rhel-server-releases: true, rhui-REGION-rhel-server-releases-debug: false,
+        rhui-REGION-rhel-server-releases-source: false, rhui-REGION-rhel-server-rh-common: true,
+        rhui-REGION-rhel-server-rhscl: false, rhui-REGION-rhel-server-source-extras: false,
+        rhui-REGION-rhel-server-source-optional: false, rhui-REGION-rhel-server-source-rh-common: false,
+        rhui-REGION-rhel-server-source-rhscl: false, rhui-REGION-rhel-server-source-supplementary: false,
+        rhui-REGION-rhel-server-supplementary: false}
+      expected repos: {rhui-REGION-client-config-server-7: true, rhui-REGION-rhel-server-debug-extras: false,
+        rhui-REGION-rhel-server-debug-optional: false, rhui-REGION-rhel-server-debug-rh-common: false,
+        rhui-REGION-rhel-server-debug-rhscl: false, rhui-REGION-rhel-server-debug-supplementary: false,
+        rhui-REGION-rhel-server-extras: false, rhui-REGION-rhel-server-optional: false,
+        rhui-REGION-rhel-server-releases: true, rhui-REGION-rhel-server-releases-debug: false,
+        rhui-REGION-rhel-server-releases-source: false, rhui-REGION-rhel-server-rh-common: true,
+        rhui-REGION-rhel-server-rhscl: false, rhui-REGION-rhel-server-source-extras: false,
+        rhui-REGION-rhel-server-source-optional: false, rhui-REGION-rhel-server-source-rh-common: false,
+        rhui-REGION-rhel-server-source-rhscl: false, rhui-REGION-rhel-server-source-supplementary: false,
+        rhui-REGION-rhel-server-supplementary: false}
+      result: passed
+    name: testcase_27_yum_repos
+    result: passed
+    stage: stage1
+    start_time: 1490285912.480289
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285913.07126
+    exception: null
+    log: []
+    name: testcase_68_atomic_sanity
+    result: passed
+    stage: stage1
+    start_time: 1490285913.071242
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285915.075918
+    exception: null
+    log:
+    - {command: cat /proc/cpuinfo | grep '^processor' | wc -l, expectation: '4', result: passed}
+    name: testcase_34_cpu
+    result: passed
+    stage: stage1
+    start_time: 1490285914.957589
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285919.038157
+    exception: null
+    log:
+    - {command: 'rpm -q --queryformat ''%{NAME}
+
+        '' cloud-init', result: passed, value: cloud-init}
+    - {hatlatytla: cloud-init}
+    - {hatlatytla: cloud-init}
+    - {command: ls -l /userdata_test, result: passed}
+    - {command: rpm -q xdelta, result: passed}
+    name: testcase_33_userdata
+    result: passed
+    stage: stage1
+    start_time: 1490285915.46447
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285919.955114
+    exception: null
+    log:
+    - {command: test -f /root/hostname_text.txt || hostname > /root/hostname_text.txt;
+        sync, result: passed}
+    - {command: grep -x `hostname` /root/hostname_text.txt, result: passed}
+    name: testcase_141_hostname
+    result: passed
+    stage: stage1
+    start_time: 1490285917.491651
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285922.683981
+    exception: null
+    log:
+    - {actual: '1', command: ls -Z /etc/sysconfig/rh-cloud-firstboot | grep etc_t,
+      result: failed}
+    name: testcase_100_bug752233
+    result: failed
+    stage: stage1
+    start_time: 1490285921.452917
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285923.497897
+    exception: null
+    log:
+    - {command: 'echo START; grep ''avc:[[:space:]]*denied'' /var/log/messages /var/log/audit/audit.log
+        | grep -v userdata; echo END', expectation: "\r\nSTART\r\nEND\r\n", result: passed}
+    name: testcase_80_no_avc_denials
+    result: passed
+    stage: stage1
+    start_time: 1490285922.381189
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285925.572037
+    exception: null
+    log:
+    - {command: '[ ! -f ~root/DVA_OLD_BASH_HISTORY ] && echo 0 || cat ~root/DVA_OLD_BASH_HISTORY
+        | wc -l', expectation: "\r\n0\r\n", result: passed}
+    - {command: '[ ! -f ~ec2-user/DVA_OLD_BASH_HISTORY ] && echo 0 || cat ~ec2-user/DVA_OLD_BASH_HISTORY
+        | wc -l', expectation: "\r\n0\r\n", result: passed}
+    - {command: '[ ! -f ~fedora/DVA_OLD_BASH_HISTORY ] && echo 0 || cat ~fedora/DVA_OLD_BASH_HISTORY
+        | wc -l', expectation: "\r\n0\r\n", result: passed}
+    - {command: '[ ! -f ~cloud-user/DVA_OLD_BASH_HISTORY ] && echo 0 || cat ~cloud-user/DVA_OLD_BASH_HISTORY
+        | wc -l', expectation: "\r\n0\r\n", result: passed}
+    name: testcase_01_bash_history
+    result: passed
+    stage: stage1
+    start_time: 1490285925.101991
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285928.139839
+    exception: null
+    log:
+    - {command: rpm -q systemd > /dev/null && echo True || echo False, result: passed,
+      value: 'True'}
+    - {command: readlink -f /etc/systemd/system/default.target, expectation: /lib/systemd/system/multi-user.target,
+      result: passed}
+    name: testcase_06_inittab
+    result: passed
+    stage: stage1
+    start_time: 1490285925.905916
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285931.863142
+    exception: null
+    log:
+    - {command: 'uname -r | sed -e ''s,\.i686$,,''  -e ''s,\.x86_64$,,''', result: passed,
+      value: 3.10.0-514.el7}
+    - {command: 'rpm -q --last kernel | sed -e ''s,^kernel-,,'' -e ''s,[[:space:]].*$,,''
+        | head -1 | sed -e ''s,\.i686$,,''  -e ''s,\.x86_64$,,''', result: passed,
+      value: 3.10.0-514.el7}
+    - {command: uname -o, result: passed, value: GNU/Linux}
+    - {command: '[ 3.10.0-514.el7 = 3.10.0-514.el7 ]', result: passed}
+    - {command: '[ GNU/Linux = ''GNU/Linux'' ]', result: passed}
+    name: testcase_25_uname
+    result: passed
+    stage: stage1
+    start_time: 1490285928.051979
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285934.131049
+    exception: null
+    log:
+    - {command: rpm -q systemd > /dev/null && echo True || echo False, result: passed,
+      value: 'True'}
+    - {command: systemctl is-active sshd.service, result: passed}
+    - {command: grep 'PasswordAuthentication no' /etc/ssh/sshd_config, result: passed}
+    name: testcase_18_sshd
+    result: passed
+    stage: stage1
+    start_time: 1490285930.552611
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285954.273441
+    exception: null
+    log:
+    - {command: ls -la /sbin/mkfs.vfat 2> /dev/null | wc -l, result: passed, value: '0'}
+    - {command: ls -la /sbin/mkfs.xfs 2> /dev/null | wc -l, result: passed, value: '1'}
+    - {command: fdisk -l /dev/xvdf | grep '^Disk', result: passed}
+    - {command: grep '/dev/xvdf ' /proc/mounts  | wc -l, result: passed, value: '1'}
+    name: testcase_32_ephemeral
+    result: passed
+    stage: stage1
+    start_time: 1490285951.695024
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285955.046282
+    exception: null
+    log:
+    - {command: yum --disablerepo='*' -v repolist, expectation: Not loading "subscription-manager"
+        plugin, result: passed}
+    - {command: yum --enableplugin=subscription-manager --disablerepo='*' -v repolist,
+      expectation: Loading "subscription-manager" plugin, result: passed}
+    - {command: subscription-manager list, expectation: Installed Product Status,
+      result: passed}
+    name: testcase_31_subscription_management
+    result: passed
+    stage: stage1
+    start_time: 1490285951.695211
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490285978.092577
+    exception: null
+    log:
+    - {command: yum clean all, result: passed}
+    - {command: yum repolist, result: passed}
+    - {command: yum search zsh, result: passed}
+    - {command: yum -y install zsh, result: passed}
+    - {command: 'rpm -q --queryformat ''%{NAME}'' zsh', result: passed}
+    - {command: rpm -e zsh, result: passed}
+    name: testcase_50_yum_package_install
+    result: passed
+    stage: stage1
+    start_time: 1490285957.466264
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490286079.055502
+    exception: null
+    log:
+    - {command: yum -y groupinstall 'Development tools', result: passed}
+    - {command: rpm -q glibc-devel, result: passed}
+    name: testcase_55_yum_group_install
+    result: passed
+    stage: stage1
+    start_time: 1490285980.533531
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490286358.460223
+    exception: null
+    log:
+    - {command: 'rpm -q matahari-net && yum -y remove matahari-net ||:', result: passed}
+    - {command: yum -y install kernel, result: passed}
+    - {command: yum -y update, result: passed}
+    name: testcase_60_yum_update
+    result: passed
+    stage: stage1
+    start_time: 1490286081.594034
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490286361.126669
+    exception: null
+    log:
+    - {comment: No proxy set, result: skip}
+    name: testcase_61_yum_proxy
+    result: passed
+    stage: stage1
+    start_time: 1490286361.126622
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490286439.587349
+    exception: null
+    log:
+    - {command: 'grep --color=none ''MemTotal:'' /proc/meminfo', match: '.*\r\nMemTotal:\s*([0-9]+) ',
+      result: passed, value: '[''14972588'']'}
+    - {command: '[ 14972588 -gt 14000000 ]', result: passed}
+    name: testcase_08_memory
+    result: passed
+    stage: stage2
+    start_time: 1490286438.240269
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490286440.702901
+    exception: null
+    log:
+    - {command: cat /proc/cmdline | grep -v -i quiet, result: passed}
+    - {command: cat /proc/cmdline | grep -v -i rhgb, result: passed}
+    name: testcase_66_bug1122300_proc_cmdline
+    result: passed
+    stage: stage2
+    start_time: 1490286438.239916
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490286439.381486
+    exception: null
+    log:
+    - {command: 'echo START; grep ''avc:[[:space:]]*denied'' /var/log/messages /var/log/audit/audit.log
+        | grep -v userdata; echo END', expectation: "\r\nSTART\r\nEND\r\n", result: passed}
+    name: testcase_80_no_avc_denials
+    result: passed
+    stage: stage2
+    start_time: 1490286438.26283
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490286449.865057
+    exception: null
+    log:
+    - {command: 'uname -r | sed -e ''s,\.i686$,,''  -e ''s,\.x86_64$,,''', result: passed,
+      value: 3.10.0-514.10.2.el7}
+    - {command: 'rpm -q --last kernel | sed -e ''s,^kernel-,,'' -e ''s,[[:space:]].*$,,''
+        | head -1 | sed -e ''s,\.i686$,,''  -e ''s,\.x86_64$,,''', result: passed,
+      value: 3.10.0-514.10.2.el7}
+    - {command: uname -o, result: passed, value: GNU/Linux}
+    - {command: '[ 3.10.0-514.10.2.el7 = 3.10.0-514.10.2.el7 ]', result: passed}
+    - {command: '[ GNU/Linux = ''GNU/Linux'' ]', result: passed}
+    name: testcase_25_uname
+    result: passed
+    stage: stage2
+    start_time: 1490286438.267032
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  cpu: '4'
+  end_time: 1490285785.088084
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: execute_tests
+  stage_result: passed
+  start_time: 1490285785.088084
+  test:
+    end_time: 1490286440.728064
+    exception: null
+    log:
+    - {command: test -f /root/hostname_text.txt || hostname > /root/hostname_text.txt;
+        sync, result: passed}
+    - {command: grep -x `hostname` /root/hostname_text.txt, result: passed}
+    name: testcase_141_hostname
+    result: passed
+    stage: stage2
+    start_time: 1490286438.265485
+  version: '7.3'
+  virtualization: hvm
+- ami: ami-b63769a1
+  arch: x86_64
+  cloud: ec2
+  cloudhwname: m3.xlarge
+  console: "[    0.000000] Initializing cgroup subsys cpuset\r\n[    0.000000] Initializing
+    cgroup subsys cpu\r\n[    0.000000] Initializing cgroup subsys cpuacct\r\n[    0.000000]
+    Linux version 3.10.0-514.el7.x86_64 (mockbuild@x86-039.build.eng.bos.redhat.com)
+    (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #1 SMP Wed Oct 19 11:24:13
+    EDT 2016\r\n[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-3.10.0-514.el7.x86_64
+    root=UUID=3ed41454-00c8-4803-bf61-2ee88aa54dbf ro console=ttyS0,115200n8 console=tty0
+    net.ifnames=0 crashkernel=auto LANG=en_US.UTF-8\r\n[    0.000000] e820: BIOS-provided
+    physical RAM map:\r\n[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff]
+    usable\r\n[    0.000000] BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff]
+    reserved\r\n[    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff]
+    reserved\r\n[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000efffffff]
+    usable\r\n[    0.000000] BIOS-e820: [mem 0x00000000fc000000-0x00000000ffffffff]
+    reserved\r\n[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x00000003cfffffff]
+    usable\r\n[    0.000000] NX (Execute Disable) protection: active\r\n[    0.000000]
+    SMBIOS 2.4 present.\r\n[    0.000000] Hypervisor detected: Xen HVM\r\n[    0.000000]
+    Xen version 4.2.\r\n[    0.000000] Netfront and the Xen platform PCI driver have
+    been compiled for this kernel: unplug emulated NICs.\r\n[    0.000000] Blkfront
+    and the Xen platform PCI driver have been compiled for this kernel: unplug emulated
+    disks.\r\n[    0.000000] You might have to change the root device\r\n[    0.000000]
+    from /dev/hd[a-d] to /dev/xvd[a-d]\r\n[    0.000000] in your root= kernel command
+    line option\r\n[    0.000000] e820: last_pfn = 0x3d0000 max_arch_pfn = 0x400000000\r\n[
+    \   0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106\r\n[
+    \   0.000000] e820: last_pfn = 0xf0000 max_arch_pfn = 0x400000000\r\n[    0.000000]
+    found SMP MP-table at [mem 0x000fbc80-0x000fbc8f] mapped at [ffff8800000fbc80]\r\n[
+    \   0.000000] RAMDISK: [mem 0x33807000-0x35bfbfff]\r\n[    0.000000] ACPI: RSDP
+    00000000000ea020 00024 (v02    Xen)\r\n[    0.000000] ACPI: XSDT 00000000fc00ddc0
+    00054 (v01    Xen      HVM 00000000 HVML 00000000)\r\n[    0.000000] ACPI: FACP
+    00000000fc00da80 000F4 (v04    Xen      HVM 00000000 HVML 00000000)\r\n[    0.000000]
+    ACPI: DSDT 00000000fc001ce0 0BD19 (v02    Xen      HVM 00000000 INTL 20090123)\r\n[
+    \   0.000000] ACPI: FACS 00000000fc001ca0 00040\r\n[    0.000000] ACPI: APIC 00000000fc00db80
+    000D8 (v02    Xen      HVM 00000000 HVML 00000000)\r\n[    0.000000] ACPI: HPET
+    00000000fc00dcd0 00038 (v01    Xen      HVM 00000000 HVML 00000000)\r\n[    0.000000]
+    ACPI: WAET 00000000fc00dd10 00028 (v01    Xen      HVM 00000000 HVML 00000000)\r\n[
+    \   0.000000] ACPI: SSDT 00000000fc00dd40 00031 (v02    Xen      HVM 00000000
+    INTL 20090123)\r\n[    0.000000] ACPI: SSDT 00000000fc00dd80 00031 (v02    Xen
+    \     HVM 00000000 INTL 20090123)\r\n[    0.000000] No NUMA configuration found\r\n[
+    \   0.000000] Faking a node at [mem 0x0000000000000000-0x00000003cfffffff]\r\n[
+    \   0.000000] Initmem setup node 0 [mem 0x00000000-0x3cfffffff]\r\n[    0.000000]
+    \  NODE_DATA [mem 0x3cffcd000-0x3cfff3fff]\r\n[    0.000000] Reserving 161MB of
+    memory at 656MB for crashkernel (System RAM: 15359MB)\r\n[    0.000000] Zone ranges:\r\n[
+    \   0.000000]   DMA      [mem 0x00001000-0x00ffffff]\r\n[    0.000000]   DMA32
+    \   [mem 0x01000000-0xffffffff]\r\n[    0.000000]   Normal   [mem 0x100000000-0x3cfffffff]\r\n[
+    \   0.000000] Movable zone start for each node\r\n[    0.000000] Early memory
+    node ranges\r\n[    0.000000]   node   0: [mem 0x00001000-0x0009dfff]\r\n[    0.000000]
+    \  node   0: [mem 0x00100000-0xefffffff]\r\n[    0.000000]   node   0: [mem 0x100000000-0x3cfffffff]\r\n[
+    \   0.000000] ACPI: PM-Timer IO Port: 0xb008\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x00]
+    lapic_id[0x00] enabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x01] lapic_id[0x02]
+    enabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x02] lapic_id[0x01] enabled)\r\n[
+    \   0.000000] ACPI: LAPIC (acpi_id[0x03] lapic_id[0x03] enabled)\r\n[    0.000000]
+    ACPI: LAPIC (acpi_id[0x04] lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC
+    (acpi_id[0x05] lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x06]
+    lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x07] lapic_id[0x00]
+    disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x08] lapic_id[0x00] disabled)\r\n[
+    \   0.000000] ACPI: LAPIC (acpi_id[0x09] lapic_id[0x00] disabled)\r\n[    0.000000]
+    ACPI: LAPIC (acpi_id[0x0a] lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC
+    (acpi_id[0x0b] lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x0c]
+    lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x0d] lapic_id[0x00]
+    disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x0e] lapic_id[0x00] disabled)\r\n[
+    \   0.000000] ACPI: IOAPIC (id[0x01] address[0xfec00000] gsi_base[0])\r\n[    0.000000]
+    IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-47\r\n[    0.000000]
+    ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)\r\n[    0.000000] ACPI:
+    INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 low level)\r\n[    0.000000] ACPI: INT_SRC_OVR
+    (bus 0 bus_irq 10 global_irq 10 low level)\r\n[    0.000000] ACPI: INT_SRC_OVR
+    (bus 0 bus_irq 11 global_irq 11 low level)\r\n[    0.000000] Using ACPI (MADT)
+    for SMP configuration information\r\n[    0.000000] ACPI: HPET id: 0x8086a201
+    base: 0xfed00000\r\n[    0.000000] smpboot: Allowing 15 CPUs, 11 hotplug CPUs\r\n[
+    \   0.000000] PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]\r\n[    0.000000]
+    PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]\r\n[    0.000000] PM:
+    Registered nosave memory: [mem 0x000e0000-0x000fffff]\r\n[    0.000000] PM: Registered
+    nosave memory: [mem 0xf0000000-0xfbffffff]\r\n[    0.000000] PM: Registered nosave
+    memory: [mem 0xfc000000-0xffffffff]\r\n[    0.000000] e820: [mem 0xf0000000-0xfbffffff]
+    available for PCI devices\r\n[    0.000000] Booting paravirtualized kernel on
+    Xen HVM\r\n[    0.000000] setup_percpu: NR_CPUS:5120 nr_cpumask_bits:15 nr_cpu_ids:15
+    nr_node_ids:1\r\n[    0.000000] PERCPU: Embedded 33 pages/cpu @ffff8803c0200000
+    s96728 r8192 d30248 u262144\r\n[    0.000000] Built 1 zonelists in Zone order,
+    mobility grouping on.  Total pages: 3870600\r\n[    0.000000] Policy zone: Normal\r\n[
+    \   0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.10.0-514.el7.x86_64
+    root=UUID=3ed41454-00c8-4803-bf61-2ee88aa54dbf ro console=ttyS0,115200n8 console=tty0
+    net.ifnames=0 crashkernel=auto LANG=en_US.UTF-8\r\n[    0.000000] PID hash table
+    entries: 4096 (order: 3, 32768 bytes)\r\n[    0.000000] x86/fpu: xstate_offset[2]:
+    0240, xstate_sizes[2]: 0100\r\n[    0.000000] xsave: enabled xstate_bv 0x7, cntxt
+    size 0x340 using standard form\r\n[    0.000000] Memory: 5876632k/15990784k available
+    (6764k kernel code, 262540k absent, 532040k reserved, 4433k data, 1680k init)\r\n[
+    \   0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=15, Nodes=1\r\n[
+    \   0.000000] Hierarchical RCU implementation.\r\n[    0.000000] \tRCU restricting
+    CPUs from NR_CPUS=5120 to nr_cpu_ids=15.\r\n[    0.000000] NR_IRQS:327936 nr_irqs:952
+    0\r\n[    0.000000] xen:events: Xen HVM callback vector for event delivery is
+    enabled\r\n[    0.000000] Console: colour VGA+ 80x25\r\n[    0.000000] console
+    [tty0] enabled\r\n[    0.000000] Cannot get hvm parameter CONSOLE_EVTCHN (18):
+    -22!\r\n[    0.000000] console [ttyS0] enabled\r\n[    0.000000] allocated 62914560
+    bytes of page_cgroup\r\n[    0.000000] please try 'cgroup_disable=memory' option
+    if you don't want memory cgroups\r\n[    0.000000] tsc: Fast TSC calibration using
+    PIT\r\n[    0.000000] tsc: Detected 2499.906 MHz processor\r\n[    0.022000] Calibrating
+    delay loop (skipped), value calculated using timer frequency.. 5000.07 BogoMIPS
+    (lpj=2500038)\r\n[    0.029003] pid_max: default: 32768 minimum: 301\r\n[    0.033035]
+    Security Framework initialized\r\n[    0.036006] SELinux:  Initializing.\r\n[
+    \   0.040810] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes)\r\n[
+    \   0.050457] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes)\r\n[
+    \   0.057875] Mount-cache hash table entries: 4096\r\n[    0.062191] Initializing
+    cgroup subsys memory\r\n[    0.066011] Initializing cgroup subsys devices\r\n[
+    \   0.069003] Initializing cgroup subsys freezer\r\n[    0.073003] Initializing
+    cgroup subsys net_cls\r\n[    0.077003] Initializing cgroup subsys blkio\r\n[
+    \   0.081003] Initializing cgroup subsys perf_event\r\n[    0.085004] Initializing
+    cgroup subsys hugetlb\r\n[    0.088003] Initializing cgroup subsys pids\r\n[    0.092003]
+    Initializing cgroup subsys net_prio\r\n[    0.095070] CPU: Physical Processor
+    ID: 0\r\n[    0.099771] mce: CPU supports 2 MCE banks\r\n[    0.103025] Last level
+    iTLB entries: 4KB 512, 2MB 0, 4MB 0\r\n[    0.107003] Last level dTLB entries:
+    4KB 512, 2MB 0, 4MB 0\r\n[    0.112002] tlb_flushall_shift: 6\r\n[    0.115229]
+    Freeing SMP alternatives: 28k freed\r\n[    0.122696] ACPI: Core revision 20130517\r\n[
+    \   0.129564] ACPI: All ACPI Tables successfully acquired\r\n[    0.134004] ftrace:
+    allocating 25811 entries in 101 pages\r\n[    0.164091] smpboot: Max logical packages:
+    15\r\n[    0.167003] smpboot: APIC(0) Converting physical 0 to logical package
+    0\r\n[    0.173298] IRQ remapping doesn't support X2APIC mode, disable x2apic.\r\n[
+    \   0.179003] Switched APIC routing to physical flat.\r\n[    0.186161] ..TIMER:
+    vector=0x30 apic1=0 pin1=2 apic2=0 pin2=0\r\n[    0.200985] smpboot: CPU0: Intel(R)
+    Xeon(R) CPU E5-2670 v2 @ 2.50GHz (fam: 06, model: 3e, stepping: 04)\r\n[    0.209013]
+    installing Xen timer for CPU 0\r\n[    0.212077] cpu 0 spinlock event irq 53\r\n[
+    \   0.213012] Performance Events: unsupported p6 CPU model 62 no PMU driver, software
+    events only.\r\n[    0.217185] NMI watchdog: disabled (cpu0): hardware events
+    not enabled\r\n[    0.218005] NMI watchdog: Shutting down hard lockup detector
+    on all cpus\r\n[    0.219062] installing Xen timer for CPU 1\r\n[    0.220059]
+    smpboot: Booting Node   0, Processors  #1cpu 1 spinlock event irq 59\r\n[    0.463114]
+    installing Xen timer for CPU 2\r\n[    0.464064]  #2cpu 2 spinlock event irq 65\r\n[
+    \   0.706109] installing Xen timer for CPU 3\r\n[    0.707063]  #3cpu 3 spinlock
+    event irq 71\r\n[    0.949020] Brought up 4 CPUs\r\n[    0.950005] smpboot: Total
+    of 4 processors activated (20000.30 BogoMIPS)\r\n[    0.994563] node 0 initialised,
+    2329893 pages in 44ms\r\n[    0.999078] devtmpfs: initialized\r\n[    1.002453]
+    EVM: security.selinux\r\n[    1.003005] EVM: security.ima\r\n[    1.004004] EVM:
+    security.capability\r\n[    1.005774] atomic64 test passed for x86-64 platform
+    with CX8 and with SSE\r\n[    1.006008] pinctrl core: initialized pinctrl subsystem\r\n[
+    \   1.007137] NET: Registered protocol family 16\r\n[    1.008159] ACPI: bus type
+    PCI registered\r\n[    1.011007] acpiphp: ACPI Hot Plug PCI Controller Driver
+    version: 0.5\r\n[    1.015236] PCI: Using configuration type 1 for base access\r\n[
+    \   1.022095] ACPI: Added _OSI(Module Device)\r\n[    1.026010] ACPI: Added _OSI(Processor
+    Device)\r\n[    1.029005] ACPI: Added _OSI(3.0 _SCP Extensions)\r\n[    1.033005]
+    ACPI: Added _OSI(Processor Aggregator Device)\r\n[    1.041430] ACPI: Interpreter
+    enabled\r\n[    1.045016] ACPI: (supports S0 S3 S4 S5)\r\n[    1.048004] ACPI:
+    Using IOAPIC for interrupt routing\r\n[    1.053022] PCI: Using host bridge windows
+    from ACPI; if necessary, use \"pci=nocrs\" and report a bug\r\n[    1.132660]
+    ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])\r\n[    1.138011] acpi
+    PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]\r\n[    1.143011] acpi
+    PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM\r\n[    1.148096] acpi
+    PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration
+    space under this bridge.\r\n[    1.172812] acpiphp: Slot [0] registered\r\n[    1.177013]
+    acpiphp: Slot [3] registered\r\n[    1.181392] acpiphp: Slot [4] registered\r\n[
+    \   1.184303] acpiphp: Slot [5] registered\r\n[    1.188309] acpiphp: Slot [6]
+    registered\r\n[    1.192236] acpiphp: Slot [7] registered\r\n[    1.195313] acpiphp:
+    Slot [8] registered\r\n[    1.199238] acpiphp: Slot [9] registered\r\n[    1.202312]
+    acpiphp: Slot [10] registered\r\n[    1.206345] acpiphp: Slot [11] registered\r\n[
+    \   1.210418] acpiphp: Slot [12] registered\r\n[    1.214381] acpiphp: Slot [13]
+    registered\r\n[    1.218352] acpiphp: Slot [14] registered\r\n[    1.222317] acpiphp:
+    Slot [15] registered\r\n[    1.225381] acpiphp: Slot [16] registered\r\n[    1.230350]
+    acpiphp: Slot [17] registered\r\n[    1.234634] acpiphp: Slot [18] registered\r\n[
+    \   1.239326] acpiphp: Slot [19] registered\r\n[    1.243398] acpiphp: Slot [20]
+    registered\r\n[    1.247313] acpiphp: Slot [21] registered\r\n[    1.251354] acpiphp:
+    Slot [22] registered\r\n[    1.255376] acpiphp: Slot [23] registered\r\n[    1.259374]
+    acpiphp: Slot [24] registered\r\n[    1.263497] acpiphp: Slot [25] registered\r\n[
+    \   1.268457] acpiphp: Slot [26] registered\r\n[    1.273379] acpiphp: Slot [27]
+    registered\r\n[    1.277343] acpiphp: Slot [28] registered\r\n[    1.280287] acpiphp:
+    Slot [29] registered\r\n[    1.284282] acpiphp: Slot [30] registered\r\n[    1.287295]
+    acpiphp: Slot [31] registered\r\n[    1.291356] PCI host bridge to bus 0000:00\r\n[
+    \   1.294008] pci_bus 0000:00: root bus resource [bus 00-ff]\r\n[    1.298006]
+    pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]\r\n[    1.303006]
+    pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]\r\n[    1.307005]
+    pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]\r\n[    1.313006]
+    pci_bus 0000:00: root bus resource [mem 0xf0000000-0xfbffffff window]\r\n[    1.322893]
+    pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]\r\n[    1.327005]
+    pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]\r\n[    1.331005] pci
+    0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]\r\n[    1.335005]
+    pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]\r\n[    1.339540] *
+    Found PM-Timer Bug on the chipset. Due to workarounds for a bug,\r\n[    1.339540]
+    * this clock source is slow. Consider trying other clock sources\r\n[    1.348000]
+    pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI\r\n[    1.358126]
+    ACPI: PCI Interrupt Link [LNKA] (IRQs *5 10 11)\r\n[    1.364179] ACPI: PCI Interrupt
+    Link [LNKB] (IRQs 5 *10 11)\r\n[    1.369173] ACPI: PCI Interrupt Link [LNKC]
+    (IRQs 5 10 *11)\r\n[    1.374173] ACPI: PCI Interrupt Link [LNKD] (IRQs *5 10
+    11)\r\n[    1.394880] ACPI: Enabled 2 GPEs in block 00 to 0F\r\n[    1.398076]
+    xen:balloon: Initialising balloon driver\r\n[    1.403025] xen_balloon: Initialising
+    balloon driver\r\n[    1.406063] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none\r\n[
+    \   1.412008] vgaarb: loaded\r\n[    1.423008] vgaarb: bridge control possible
+    0000:00:02.0\r\n[    1.429212] SCSI subsystem initialized\r\n[    1.435037] ACPI:
+    bus type USB registered\r\n[    1.440026] usbcore: registered new interface driver
+    usbfs\r\n[    1.447015] usbcore: registered new interface driver hub\r\n[    1.454705]
+    usbcore: registered new device driver usb\r\n[    1.459199] PCI: Using ACPI for
+    IRQ routing\r\n[    1.463906] NetLabel: Initializing\r\n[    1.467008] NetLabel:
+    \ domain hash size = 128\r\n[    1.473007] NetLabel:  protocols = UNLABELED CIPSOv4\r\n[
+    \   1.479023] NetLabel:  unlabeled traffic allowed by default\r\n[    1.485082]
+    HPET: 3 timers in total, 0 timers will be used for per-cpu timer\r\n[    1.491023]
+    hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0\r\n[    1.502244] hpet0: 3 comparators,
+    64-bit 62.500000 MHz counter\r\n[    1.827049] Switched to clocksource xen\r\n[
+    \   1.834717] pnp: PnP ACPI init\r\n[    1.837398] ACPI: bus type PNP registered\r\n[
+    \   1.840555] system 00:00: [mem 0x00000000-0x0009ffff] could not be reserved\r\n[
+    \   1.844923] system 00:01: [io  0x08a0-0x08a3] has been reserved\r\n[    1.848798]
+    system 00:01: [io  0x0cc0-0x0ccf] has been reserved\r\n[    1.853255] system 00:01:
+    [io  0x04d0-0x04d1] has been reserved\r\n[    1.857938] system 00:07: [io  0x10c0-0x1141]
+    has been reserved\r\n[    1.862628] system 00:07: [io  0xb044-0xb047] has been
+    reserved\r\n[    1.886132] pnp: PnP ACPI: found 8 devices\r\n[    1.889562] ACPI:
+    bus type PNP unregistered\r\n[    1.900386] NET: Registered protocol family 2\r\n[
+    \   1.904976] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)\r\n[
+    \   1.911252] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)\r\n[
+    \   1.915825] TCP: Hash tables configured (established 131072 bind 65536)\r\n[
+    \   1.919815] TCP: reno registered\r\n[    1.922308] UDP hash table entries: 8192
+    (order: 6, 262144 bytes)\r\n[    1.926468] UDP-Lite hash table entries: 8192 (order:
+    6, 262144 bytes)\r\n[    1.930487] NET: Registered protocol family 1\r\n[    1.933489]
+    pci 0000:00:00.0: Limiting direct PCI/PCI transfers\r\n[    1.937192] pci 0000:00:01.0:
+    PIIX3: Enabling Passive Release\r\n[    1.940849] pci 0000:00:01.0: Activating
+    ISA DMA hang workarounds\r\n[    1.944756] Unpacking initramfs...\r\n[    2.413565]
+    Freeing initrd memory: 36820k freed\r\n[    2.425278] PCI-DMA: Using software
+    bounce buffering for IO (SWIOTLB)\r\n[    2.429129] software IO TLB [mem 0xec000000-0xf0000000]
+    (64MB) mapped at [ffff8800ec000000-ffff8800efffffff]\r\n[    2.435549] RAPL PMU:
+    API unit is 2^-32 Joules, 3 fixed counters, 163840 ms ovfl timer\r\n[    2.440966]
+    RAPL PMU: hw unit of domain pp0-core 2^-16 Joules\r\n[    2.445338] RAPL PMU:
+    hw unit of domain package 2^-16 Joules\r\n[    2.449942] RAPL PMU: hw unit of
+    domain dram 2^-16 Joules\r\n[    2.454970] sha1_ssse3: Using AVX optimized SHA-1
+    implementation\r\n[    2.460290] sha256_ssse3: Using AVX optimized SHA-256 implementation\r\n[
+    \   2.466366] futex hash table entries: 4096 (order: 6, 262144 bytes)\r\n[    2.472284]
+    Initialise system trusted keyring\r\n[    2.476396] audit: initializing netlink
+    socket (disabled)\r\n[    2.481766] type=2000 audit(1490285716.564:1): initialized\r\n[
+    \   2.506552] HugeTLB registered 2 MB page size, pre-allocated 0 pages\r\n[    2.513405]
+    zpool: loaded\r\n[    2.516296] zbud: loaded\r\n[    2.519630] VFS: Disk quotas
+    dquot_6.5.2\r\n[    2.523599] Dquot-cache hash table entries: 512 (order 0, 4096
+    bytes)\r\n[    2.529302] msgmni has been set to 29240\r\n[    2.533646] Key type
+    big_key registered\r\n[    2.539127] NET: Registered protocol family 38\r\n[    2.543568]
+    Key type asymmetric registered\r\n[    2.547810] Asymmetric key parser 'x509'
+    registered\r\n[    2.552596] Block layer SCSI generic (bsg) driver version 0.4
+    loaded (major 251)\r\n[    2.560010] io scheduler noop registered\r\n[    2.564171]
+    io scheduler deadline registered (default)\r\n[    2.569114] io scheduler cfq
+    registered\r\n[    2.573119] pci_hotplug: PCI Hot Plug PCI Core version: 0.5\r\n[
+    \   2.578383] pciehp: PCI Express Hot Plug Controller Driver version: 0.4\r\n[
+    \   2.584643] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0\r\n[
+    \   2.591644] ACPI: Power Button [PWRF]\r\n[    2.595773] input: Sleep Button
+    as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1\r\n[    2.603467] ACPI: Sleep
+    Button [SLPF]\r\n[    2.607537] GHES: HEST is not enabled!\r\n[    2.612084] xen:grant_table:
+    Grant tables using version 1 layout\r\n[    2.618274] Grant table initialized\r\n[
+    \   2.622604] Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!\r\n[    2.628226]
+    Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled\r\n[    2.663420] 00:06:
+    ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A\r\n[    2.669118] Non-volatile memory
+    driver v1.3\r\n[    2.673096] Linux agpgart interface v0.103\r\n[    2.677088]
+    crash memory driver: version 1.1\r\n[    2.680689] rdac: device handler registered\r\n[
+    \   2.684329] hp_sw: device handler registered\r\n[    2.687856] emc: device handler
+    registered\r\n[    2.691141] alua: device handler registered\r\n[    2.694954]
+    libphy: Fixed MDIO Bus: probed\r\n[    2.698855] ehci_hcd: USB 2.0 'Enhanced'
+    Host Controller (EHCI) Driver\r\n[    2.704378] ehci-pci: EHCI PCI platform driver\r\n[
+    \   2.707976] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver\r\n[    2.713296]
+    ohci-pci: OHCI PCI platform driver\r\n[    2.717384] uhci_hcd: USB Universal Host
+    Controller Interface driver\r\n[    2.722451] usbcore: registered new interface
+    driver usbserial\r\n[    2.727595] usbcore: registered new interface driver usbserial_generic\r\n[
+    \   2.733493] usbserial: USB Serial support registered for generic\r\n[    2.738674]
+    i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12\r\n[
+    \   2.747493] serio: i8042 KBD port at 0x60,0x64 irq 1\r\n[    2.751680] serio:
+    i8042 AUX port at 0x60,0x64 irq 12\r\n[    2.756172] mousedev: PS/2 mouse device
+    common for all mice\r\n[    2.761206] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2\r\n[
+    \   2.761292] rtc_cmos 00:02: rtc core: registered rtc_cmos as rtc0\r\n[    2.761349]
+    rtc_cmos 00:02: alarms up to one day, 114 bytes nvram, hpet irqs\r\n[    2.761392]
+    cpuidle: using governor menu\r\n[    2.761447] hidraw: raw HID events driver (C)
+    Jiri Kosina\r\n[    2.761530] usbcore: registered new interface driver usbhid\r\n[
+    \   2.761531] usbhid: USB HID core driver\r\n[    2.761577] drop_monitor: Initializing
+    network drop monitor service\r\n[    2.761652] TCP: cubic registered\r\n[    2.761655]
+    Initializing XFRM netlink socket\r\n[    2.761738] NET: Registered protocol family
+    10\r\n[    2.761991] NET: Registered protocol family 17\r\n[    2.768367] microcode:
+    CPU0 sig=0x306e4, pf=0x1, revision=0x428\r\n[    2.768375] microcode: CPU1 sig=0x306e4,
+    pf=0x1, revision=0x428\r\n[    2.768386] microcode: CPU2 sig=0x306e4, pf=0x1,
+    revision=0x428\r\n[    2.768400] microcode: CPU3 sig=0x306e4, pf=0x1, revision=0x428\r\n[
+    \   2.768456] microcode: Microcode Update Driver: v2.01 <tigran@aivazian.fsnet.co.uk>,
+    Peter Oruba\r\n[    2.768625] Loading compiled-in X.509 certificates\r\n[    2.769073]
+    Loaded X.509 cert 'Red Hat Enterprise Linux Driver Update Program (key 3): bf57f3e87362bc7229d9f465321773dfd1f77a80'\r\n[
+    \   2.769496] Loaded X.509 cert 'Red Hat Enterprise Linux kpatch signing key:
+    4d38fd864ebe18c5f0b72e3852e2014c3a676fc8'\r\n[    2.769916] Loaded X.509 cert
+    'Red Hat Enterprise Linux kernel signing key: 75fea1df245accd97a17fe3a367261e65f8a1e60'\r\n[
+    \   2.769933] registered taskstats version 1\r\n[    2.771869] Key type trusted
+    registered\r\n[    2.773538] Key type encrypted registered\r\n[    2.775151] IMA:
+    No TPM chip found, activating TPM-bypass!\r\n[    2.775619] xenbus_probe_frontend:
+    Device with no driver: device/vfb/0\r\n[    2.775619] xenbus_probe_frontend: Device
+    with no driver: device/vbd/768\r\n[    2.775620] xenbus_probe_frontend: Device
+    with no driver: device/vbd/51792\r\n[    2.775620] xenbus_probe_frontend: Device
+    with no driver: device/vif/0\r\n[    2.778234] rtc_cmos 00:02: setting system
+    clock to 2017-03-23 16:15:17 UTC (1490285717)\r\n[    2.910970] Freeing unused
+    kernel memory: 1680k freed\r\n[    2.919778] systemd[1]: systemd 219 running in
+    system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP
+    +GCRYPT +GNUTLS +ACL +XZ -LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN)\r\n[    2.931631]
+    systemd[1]: Detected virtualization xen.\r\n[    2.935459] systemd[1]: Detected
+    architecture x86-64.\r\n[    2.939325] systemd[1]: Running in initial RAM disk.\r\n[
+    \   2.948774] systemd[1]: No hostname configured.\r\n[    2.952262] systemd[1]:
+    Set hostname to <localhost>.\r\n[    2.955962] systemd[1]: Initializing machine
+    ID from random generator.\r\n[    2.990376] systemd[1]: Reached target Swap.\r\n[
+    \   2.993569] systemd[1]: Starting Swap.\r\n[    2.999401] systemd[1]: Reached
+    target Local File Systems.\r\n[    3.002951] systemd[1]: Starting Local File Systems.\r\n[
+    \   3.009426] systemd[1]: Reached target Timers.\r\n[    3.012714] systemd[1]:
+    Starting Timers.\r\n[    3.015903] systemd[1]: Started Dispatch Password Requests
+    to Console Directory Watch.\r\n[    3.021881] systemd[1]: Starting Dispatch Password
+    Requests to Console Directory Watch.\r\n[    3.032116] systemd[1]: Reached target
+    Paths.\r\n[    3.035657] systemd[1]: Starting Paths.\r\n[    3.043083] systemd[1]:
+    Created slice Root Slice.\r\n[    3.047276] systemd[1]: Starting Root Slice.\r\n[
+    \   3.054272] systemd[1]: Listening on Journal Socket.\r\n[    3.058157] systemd[1]:
+    Starting Journal Socket.\r\n[    3.065436] systemd[1]: Created slice System Slice.\r\n[
+    \   3.069198] systemd[1]: Starting System Slice.\r\n[    3.073272] systemd[1]:
+    Starting Apply Kernel Variables...\r\n[    3.081079] systemd[1]: Starting Journal
+    Service...\r\n[    3.088620] systemd[1]: Starting Create list of required static
+    device nodes for the current kernel...\r\n[    3.099430] systemd[1]: Starting
+    dracut cmdline hook...\r\n[    3.109446] systemd[1]: Listening on udev Control
+    Socket.\r\n[    3.113574] systemd[1]: Starting udev Control Socket.\r\n[    3.120867]
+    systemd[1]: Listening on udev Kernel Socket.\r\n[    3.124886] systemd[1]: Starting
+    udev Kernel Socket.\r\n[    3.132199] systemd[1]: Reached target Sockets.\r\n[
+    \   3.135274] systemd[1]: Starting Sockets.\r\n[    3.141632] systemd[1]: Reached
+    target Slices.\r\n[    3.145121] systemd[1]: Starting Slices.\r\n[    3.152280]
+    systemd[1]: Started Journal Service.\r\n[    3.233329] FUJITSU Extended Socket
+    Network Device Driver - version 1.1 - Copyright (c) 2015 FUJITSU LIMITED\r\n[
+    \   3.257321] FDC 0 is a S82078B\r\n[    3.276388] scsi host0: ata_piix\r\n[    3.283331]
+    scsi host1: ata_piix\r\n[    3.288178] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6
+    bmdma 0xc100 irq 14\r\n[    3.294593] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376
+    bmdma 0xc108 irq 15\r\n[    3.302373] xen_netfront: Initialising Xen virtual ethernet
+    driver\r\n[    3.330864] blkfront: xvda: barrier or flush: disabled; persistent
+    grants: disabled; indirect descriptors: enabled;\r\n[    3.456027] GPT:Primary
+    header thinks Alt. header is not at the end of the disk.\r\n[    3.461692] GPT:20971519
+    != 31457279\r\n[    3.464833] GPT:Alternate GPT header not at the end of the disk.\r\n[
+    \   3.469574] GPT:20971519 != 31457279\r\n[    3.473163] GPT: Use GNU Parted to
+    correct GPT errors.\r\n[    3.477556]  xvda: xvda1 xvda2\r\n[    3.480485] tsc:
+    Refined TSC clocksource calibration: 2500.000 MHz\r\n[    3.486257] blkfront:
+    xvdf: flush diskcache: enabled; persistent grants: disabled; indirect descriptors:
+    enabled;\r\n[    3.499787] Setting capacity to 78626816\r\n[    3.503664] xvdf:
+    detected capacity change from 0 to 40256929792\r\n[    3.667812] SGI XFS with
+    ACLs, security attributes, no debug enabled\r\n[    3.674370] XFS (xvda2): Mounting
+    V5 Filesystem\r\n[    3.757062] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input3\r\n[
+    \   4.428393] XFS (xvda2): Ending clean mount\r\n[    4.840730] systemd-journald[110]:
+    Received SIGTERM from PID 1 (systemd).\r\n[    6.967343] type=1404 audit(1490285721.691:2):
+    enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295\r\n[    8.739745] type=1403
+    audit(1490285723.463:3): policy loaded auid=4294967295 ses=4294967295\r\n[    8.748962]
+    systemd[1]: Successfully loaded SELinux policy in 1.782153s.\r\n[    9.964717]
+    ip_tables: (C) 2000-2006 Netfilter Core Team\r\n[    9.984995] systemd[1]: Inserted
+    module 'ip_tables'\r\n[   10.003211] systemd[1]: Relabelled /dev and /run in 13.352ms.\r\n[
+    \  14.118991] systemd-journald[345]: Received request to flush runtime journal
+    from PID 1\r\n[   15.389287] type=1305 audit(1490285730.113:4): audit_pid=394
+    old=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:auditd_t:s0 res=1\r\n[
+    \  15.840716] input: PC Speaker as /devices/platform/pcspkr/input/input4\r\n[
+    \  16.510988] piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade
+    BIOS or use force_addr=0xaddr\r\n[   16.522794] [drm] Initialized drm 1.1.0 20060810\r\n[
+    \  16.857310] ppdev: user-space parallel port driver\r\n[   17.035874] [TTM] Zone
+    \ kernel: Available graphics memory: 7486294 kiB\r\n[   17.039726] [TTM] Zone
+    \  dma32: Available graphics memory: 2097152 kiB\r\n[   17.044062] [TTM] Initializing
+    pool allocator\r\n[   17.047516] [TTM] Initializing DMA pool allocator\r\n[   17.051493]
+    [drm] fb mappable at 0xF0000000\r\n[   17.054758] [drm] vram aper at 0xF0000000\r\n[
+    \  17.058265] [drm] size 33554432\r\n[   17.061499] [drm] fb depth is 24\r\n[
+    \  17.064743] [drm]    pitch is 3072\r\n[   17.068618] fbcon: cirrusdrmfb (fb0)
+    is primary device\r\n[   17.136708] Console: switching to colour frame buffer
+    device 128x48\r\n[   17.196777] cirrus 0000:00:02.0: fb0: cirrusdrmfb frame buffer
+    device\r\n[   17.202089] [drm] Initialized cirrus 1.0.0 20110418 for 0000:00:02.0
+    on minor 0\r\n[   17.810699] AES CTR mode by8 optimization enabled\r\n[   17.820814]
+    alg: No test for __gcm-aes-aesni (__driver-gcm-aes-aesni)\r\n[   17.852203] alg:
+    No test for crc32 (crc32-pclmul)\r\n[   21.715148] IPv6: ADDRCONF(NETDEV_UP):
+    eth0: link is not ready\r\n\r\r\nRed Hat Enterprise Linux Server 7.3 (Maipo)\r\nKernel
+    3.10.0-514.el7.x86_64 on an x86_64\r\n\r\nip-10-186-38-172 login: [   24.128460]
+    ISOFS: Unable to identify CD-ROM format.\r\n[   24.139470] ISOFS: Unable to identify
+    CD-ROM format.\r\n[   28.970842] ISOFS: Unable to identify CD-ROM format.\r\n[
+    \  28.987388] ISOFS: Unable to identify CD-ROM format.\r\n[   34.744388] EXT4-fs
+    (xvdf): mounting ext3 file system using the ext4 subsystem\r\n[   34.753146] EXT4-fs
+    (xvdf): mounted filesystem with ordered data mode. Opts: (null)\r\n[  103.818631]
+    type=1305 audit(1490285818.540:320): audit_pid=0 old=394 auid=4294967295 ses=4294967295
+    subj=system_u:system_r:auditd_t:s0 res=1\r\n[  103.830013] type=1130 audit(1490285818.552:321):
+    pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-machine-id-commit
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  103.846035] type=1131 audit(1490285818.568:322): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-machine-id-commit
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  103.863616] type=1130 audit(1490285818.586:323): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=auditd
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  103.876323] type=1131 audit(1490285818.599:324): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=auditd
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  103.892955] type=1130 audit(1490285818.615:325): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-random-seed
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  103.908581] type=1131 audit(1490285818.631:326): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-random-seed
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  103.925018] type=1130 audit(1490285818.648:327): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-tmpfiles-setup
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  103.943192] type=1131 audit(1490285818.666:328): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-tmpfiles-setup
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  103.965129] type=1130 audit(1490285818.688:329): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=rhel-import-state
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  104.032602] systemd-shutdown[1]: Sending SIGTERM to remaining
+    processes...\r\n[  104.046231] systemd-journald[345]: Received SIGTERM from PID
+    1 (systemd-shutdow).\r\n[  104.055879] systemd-shutdown[1]: Sending SIGKILL to
+    remaining processes...\r\n[  104.066232] systemd-shutdown[1]: Unmounting file
+    systems.\r\n[  104.105652] systemd-shutdown[1]: All filesystems unmounted.\r\n[
+    \ 104.111265] systemd-shutdown[1]: Deactivating swaps.\r\n[  104.118029] systemd-shutdown[1]:
+    All swaps deactivated.\r\n[  104.124793] systemd-shutdown[1]: Detaching loop devices.\r\n[
+    \ 104.131192] systemd-shutdown[1]: All loop devices detached.\r\n[  104.136080]
+    systemd-shutdown[1]: Detaching DM devices.\r\n[  104.141595] systemd-shutdown[1]:
+    All DM devices detached.\r\n[  104.197897] systemd-shutdown[1]: Rebooting.\r\n[
+    \ 104.276589] xenbus: xenbus_dev_shutdown: device/vfb/0: Initialising != Connected,
+    skipping\r\n[  104.281669] Restarting system.\r\n[  104.284729] reboot: machine
+    restart\r\n[    0.000000] Initializing cgroup subsys cpuset\r\n[    0.000000]
+    Initializing cgroup subsys cpu\r\n[    0.000000] Initializing cgroup subsys cpuacct\r\n[
+    \   0.000000] Linux version 3.10.0-514.el7.x86_64 (mockbuild@x86-039.build.eng.bos.redhat.com)
+    (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #1 SMP Wed Oct 19 11:24:13
+    EDT 2016\r\n[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-3.10.0-514.el7.x86_64
+    root=UUID=3ed41454-00c8-4803-bf61-2ee88aa54dbf ro console=ttyS0,115200n8 console=tty0
+    net.ifnames=0 crashkernel=auto LANG=en_US.UTF-8\r\n[    0.000000] e820: BIOS-provided
+    physical RAM map:\r\n[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff]
+    usable\r\n[    0.000000] BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff]
+    reserved\r\n[    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff]
+    reserved\r\n[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000efffffff]
+    usable\r\n[    0.000000] BIOS-e820: [mem 0x00000000fc000000-0x00000000ffffffff]
+    reserved\r\n[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x00000003cfffffff]
+    usable\r\n[    0.000000] NX (Execute Disable) protection: active\r\n[    0.000000]
+    SMBIOS 2.4 present.\r\n[    0.000000] Hypervisor detected: Xen HVM\r\n[    0.000000]
+    Xen version 4.2.\r\n[    0.000000] Netfront and the Xen platform PCI driver have
+    been compiled for this kernel: unplug emulated NICs.\r\n[    0.000000] Blkfront
+    and the Xen platform PCI driver have been compiled for this kernel: unplug emulated
+    disks.\r\n[    0.000000] You might have to change the root device\r\n[    0.000000]
+    from /dev/hd[a-d] to /dev/xvd[a-d]\r\n[    0.000000] in your root= kernel command
+    line option\r\n[    0.000000] e820: last_pfn = 0x3d0000 max_arch_pfn = 0x400000000\r\n[
+    \   0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106\r\n[
+    \   0.000000] e820: last_pfn = 0xf0000 max_arch_pfn = 0x400000000\r\n[    0.000000]
+    found SMP MP-table at [mem 0x000fbc80-0x000fbc8f] mapped at [ffff8800000fbc80]\r\n[
+    \   0.000000] RAMDISK: [mem 0x33807000-0x35bfbfff]\r\n[    0.000000] ACPI: RSDP
+    00000000000ea020 00024 (v02    Xen)\r\n[    0.000000] ACPI: XSDT 00000000fc00ddc0
+    00054 (v01    Xen      HVM 00000000 HVML 00000000)\r\n[    0.000000] ACPI: FACP
+    00000000fc00da80 000F4 (v04    Xen      HVM 00000000 HVML 00000000)\r\n[    0.000000]
+    ACPI: DSDT 00000000fc001ce0 0BD19 (v02    Xen      HVM 00000000 INTL 20090123)\r\n[
+    \   0.000000] ACPI: FACS 00000000fc001ca0 00040\r\n[    0.000000] ACPI: APIC 00000000fc00db80
+    000D8 (v02    Xen      HVM 00000000 HVML 00000000)\r\n[    0.000000] ACPI: HPET
+    00000000fc00dcd0 00038 (v01    Xen      HVM 00000000 HVML 00000000)\r\n[    0.000000]
+    ACPI: WAET 00000000fc00dd10 00028 (v01    Xen      HVM 00000000 HVML 00000000)\r\n[
+    \   0.000000] ACPI: SSDT 00000000fc00dd40 00031 (v02    Xen      HVM 00000000
+    INTL 20090123)\r\n[    0.000000] ACPI: SSDT 00000000fc00dd80 00031 (v02    Xen
+    \     HVM 00000000 INTL 20090123)\r\n[    0.000000] No NUMA configuration found\r\n[
+    \   0.000000] Faking a node at [mem 0x0000000000000000-0x00000003cfffffff]\r\n[
+    \   0.000000] Initmem setup node 0 [mem 0x00000000-0x3cfffffff]\r\n[    0.000000]
+    \  NODE_DATA [mem 0x3cffcd000-0x3cfff3fff]\r\n[    0.000000] Reserving 161MB of
+    memory at 656MB for crashkernel (System RAM: 15359MB)\r\n[    0.000000] Zone ranges:\r\n[
+    \   0.000000]   DMA      [mem 0x00001000-0x00ffffff]\r\n[    0.000000]   DMA32
+    \   [mem 0x01000000-0xffffffff]\r\n[    0.000000]   Normal   [mem 0x100000000-0x3cfffffff]\r\n[
+    \   0.000000] Movable zone start for each node\r\n[    0.000000] Early memory
+    node ranges\r\n[    0.000000]   node   0: [mem 0x00001000-0x0009dfff]\r\n[    0.000000]
+    \  node   0: [mem 0x00100000-0xefffffff]\r\n[    0.000000]   node   0: [mem 0x100000000-0x3cfffffff]\r\n[
+    \   0.000000] ACPI: PM-Timer IO Port: 0xb008\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x00]
+    lapic_id[0x00] enabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x01] lapic_id[0x02]
+    enabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x02] lapic_id[0x01] enabled)\r\n[
+    \   0.000000] ACPI: LAPIC (acpi_id[0x03] lapic_id[0x03] enabled)\r\n[    0.000000]
+    ACPI: LAPIC (acpi_id[0x04] lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC
+    (acpi_id[0x05] lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x06]
+    lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x07] lapic_id[0x00]
+    disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x08] lapic_id[0x00] disabled)\r\n[
+    \   0.000000] ACPI: LAPIC (acpi_id[0x09] lapic_id[0x00] disabled)\r\n[    0.000000]
+    ACPI: LAPIC (acpi_id[0x0a] lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC
+    (acpi_id[0x0b] lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x0c]
+    lapic_id[0x00] disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x0d] lapic_id[0x00]
+    disabled)\r\n[    0.000000] ACPI: LAPIC (acpi_id[0x0e] lapic_id[0x00] disabled)\r\n[
+    \   0.000000] ACPI: IOAPIC (id[0x01] address[0xfec00000] gsi_base[0])\r\n[    0.000000]
+    IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-47\r\n[    0.000000]
+    ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)\r\n[    0.000000] ACPI:
+    INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 low level)\r\n[    0.000000] ACPI: INT_SRC_OVR
+    (bus 0 bus_irq 10 global_irq 10 low level)\r\n[    0.000000] ACPI: INT_SRC_OVR
+    (bus 0 bus_irq 11 global_irq 11 low level)\r\n[    0.000000] Using ACPI (MADT)
+    for SMP configuration information\r\n[    0.000000] ACPI: HPET id: 0x8086a201
+    base: 0xfed00000\r\n[    0.000000] smpboot: Allowing 15 CPUs, 11 hotplug CPUs\r\n[
+    \   0.000000] PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]\r\n[    0.000000]
+    PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]\r\n[    0.000000] PM:
+    Registered nosave memory: [mem 0x000e0000-0x000fffff]\r\n[    0.000000] PM: Registered
+    nosave memory: [mem 0xf0000000-0xfbffffff]\r\n[    0.000000] PM: Registered nosave
+    memory: [mem 0xfc000000-0xffffffff]\r\n[    0.000000] e820: [mem 0xf0000000-0xfbffffff]
+    available for PCI devices\r\n[    0.000000] Booting paravirtualized kernel on
+    Xen HVM\r\n[    0.000000] setup_percpu: NR_CPUS:5120 nr_cpumask_bits:15 nr_cpu_ids:15
+    nr_node_ids:1\r\n[    0.000000] PERCPU: Embedded 33 pages/cpu @ffff8803c0200000
+    s96728 r8192 d30248 u262144\r\n[    0.000000] Built 1 zonelists in Zone order,
+    mobility grouping on.  Total pages: 3870600\r\n[    0.000000] Policy zone: Normal\r\n[
+    \   0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.10.0-514.el7.x86_64
+    root=UUID=3ed41454-00c8-4803-bf61-2ee88aa54dbf ro console=ttyS0,115200n8 console=tty0
+    net.ifnames=0 crashkernel=auto LANG=en_US.UTF-8\r\n[    0.000000] PID hash table
+    entries: 4096 (order: 3, 32768 bytes)\r\n[    0.000000] x86/fpu: xstate_offset[2]:
+    0240, xstate_sizes[2]: 0100\r\n[    0.000000] xsave: enabled xstate_bv 0x7, cntxt
+    size 0x340 using standard form\r\n[    0.000000] Memory: 5876632k/15990784k available
+    (6764k kernel code, 262540k absent, 532040k reserved, 4433k data, 1680k init)\r\n[
+    \   0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=15, Nodes=1\r\n[
+    \   0.000000] Hierarchical RCU implementation.\r\n[    0.000000] \tRCU restricting
+    CPUs from NR_CPUS=5120 to nr_cpu_ids=15.\r\n[    0.000000] NR_IRQS:327936 nr_irqs:952
+    0\r\n[    0.000000] xen:events: Xen HVM callback vector for event delivery is
+    enabled\r\n[    0.000000] Console: colour VGA+ 80x25\r\n[    0.000000] console
+    [tty0] enabled\r\n[    0.000000] Cannot get hvm parameter CONSOLE_EVTCHN (18):
+    -22!\r\n[    0.000000] console [ttyS0] enabled\r\n[    0.000000] allocated 62914560
+    bytes of page_cgroup\r\n[    0.000000] please try 'cgroup_disable=memory' option
+    if you don't want memory cgroups\r\n[    0.000000] tsc: Fast TSC calibration using
+    PIT\r\n[    0.000000] tsc: Detected 2500.152 MHz processor\r\n[    0.024000] Calibrating
+    delay loop (skipped), value calculated using timer frequency.. 5000.07 BogoMIPS
+    (lpj=2500038)\r\n[    0.031003] pid_max: default: 32768 minimum: 301\r\n[    0.035042]
+    Security Framework initialized\r\n[    0.039006] SELinux:  Initializing.\r\n[
+    \   0.043918] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes)\r\n[
+    \   0.055981] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes)\r\n[
+    \   0.065872] Mount-cache hash table entries: 4096\r\n[    0.070088] Initializing
+    cgroup subsys memory\r\n[    0.074010] Initializing cgroup subsys devices\r\n[
+    \   0.078003] Initializing cgroup subsys freezer\r\n[    0.083003] Initializing
+    cgroup subsys net_cls\r\n[    0.088003] Initializing cgroup subsys blkio\r\n[
+    \   0.093003] Initializing cgroup subsys perf_event\r\n[    0.099004] Initializing
+    cgroup subsys hugetlb\r\n[    0.104003] Initializing cgroup subsys pids\r\n[    0.108003]
+    Initializing cgroup subsys net_prio\r\n[    0.114077] CPU: Physical Processor
+    ID: 0\r\n[    0.120127] mce: CPU supports 2 MCE banks\r\n[    0.125026] Last level
+    iTLB entries: 4KB 512, 2MB 0, 4MB 0\r\n[    0.132003] Last level dTLB entries:
+    4KB 512, 2MB 0, 4MB 0\r\n[    0.139002] tlb_flushall_shift: 6\r\n[    0.143231]
+    Freeing SMP alternatives: 28k freed\r\n[    0.152784] ACPI: Core revision 20130517\r\n[
+    \   0.161142] ACPI: All ACPI Tables successfully acquired\r\n[    0.167005] ftrace:
+    allocating 25811 entries in 101 pages\r\n[    0.200104] smpboot: Max logical packages:
+    15\r\n[    0.206003] smpboot: APIC(0) Converting physical 0 to logical package
+    0\r\n[    0.214797] IRQ remapping doesn't support X2APIC mode, disable x2apic.\r\n[
+    \   0.221004] Switched APIC routing to physical flat.\r\n[    0.230377] ..TIMER:
+    vector=0x30 apic1=0 pin1=2 apic2=0 pin2=0\r\n[    0.248434] smpboot: CPU0: Intel(R)
+    Xeon(R) CPU E5-2670 v2 @ 2.50GHz (fam: 06, model: 3e, stepping: 04)\r\n[    0.261014]
+    installing Xen timer for CPU 0\r\n[    0.268083] cpu 0 spinlock event irq 53\r\n[
+    \   0.269014] Performance Events: unsupported p6 CPU model 62 no PMU driver, software
+    events only.\r\n[    0.273193] NMI watchdog: disabled (cpu0): hardware events
+    not enabled\r\n[    0.274005] NMI watchdog: Shutting down hard lockup detector
+    on all cpus\r\n[    0.275062] installing Xen timer for CPU 1\r\n[    0.276059]
+    smpboot: Booting Node   0, Processors  #1cpu 1 spinlock event irq 59\r\n[    0.519109]
+    installing Xen timer for CPU 2\r\n[    0.520064]  #2cpu 2 spinlock event irq 65\r\n[
+    \   0.762109] installing Xen timer for CPU 3\r\n[    0.763063]  #3cpu 3 spinlock
+    event irq 71\r\n[    1.005035] Brought up 4 CPUs\r\n[    1.006005] smpboot: Total
+    of 4 processors activated (20000.30 BogoMIPS)\r\n[    1.051189] node 0 initialised,
+    2329893 pages in 44ms\r\n[    1.055079] devtmpfs: initialized\r\n[    1.058472]
+    EVM: security.selinux\r\n[    1.059004] EVM: security.ima\r\n[    1.060004] EVM:
+    security.capability\r\n[    1.061763] atomic64 test passed for x86-64 platform
+    with CX8 and with SSE\r\n[    1.062008] pinctrl core: initialized pinctrl subsystem\r\n[
+    \   1.063147] NET: Registered protocol family 16\r\n[    1.064168] ACPI: bus type
+    PCI registered\r\n[    1.069007] acpiphp: ACPI Hot Plug PCI Controller Driver
+    version: 0.5\r\n[    1.079578] PCI: Using configuration type 1 for base access\r\n[
+    \   1.089097] ACPI: Added _OSI(Module Device)\r\n[    1.094010] ACPI: Added _OSI(Processor
+    Device)\r\n[    1.102009] ACPI: Added _OSI(3.0 _SCP Extensions)\r\n[    1.110005]
+    ACPI: Added _OSI(Processor Aggregator Device)\r\n[    1.123465] ACPI: Interpreter
+    enabled\r\n[    1.129016] ACPI: (supports S0 S3 S4 S5)\r\n[    1.134004] ACPI:
+    Using IOAPIC for interrupt routing\r\n[    1.142027] PCI: Using host bridge windows
+    from ACPI; if necessary, use \"pci=nocrs\" and report a bug\r\n[    1.234311]
+    ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])\r\n[    1.242011] acpi
+    PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]\r\n[    1.251011] acpi
+    PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM\r\n[    1.259098] acpi
+    PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration
+    space under this bridge.\r\n[    1.288973] acpiphp: Slot [0] registered\r\n[    1.296333]
+    acpiphp: Slot [3] registered\r\n[    1.303964] acpiphp: Slot [4] registered\r\n[
+    \   1.310000] acpiphp: Slot [5] registered\r\n[    1.317647] acpiphp: Slot [6]
+    registered\r\n[    1.324604] acpiphp: Slot [7] registered\r\n[    1.330614] acpiphp:
+    Slot [8] registered\r\n[    1.337578] acpiphp: Slot [9] registered\r\n[    1.342509]
+    acpiphp: Slot [10] registered\r\n[    1.347369] acpiphp: Slot [11] registered\r\n[
+    \   1.351471] acpiphp: Slot [12] registered\r\n[    1.355398] acpiphp: Slot [13]
+    registered\r\n[    1.360398] acpiphp: Slot [14] registered\r\n[    1.365461] acpiphp:
+    Slot [15] registered\r\n[    1.371496] acpiphp: Slot [16] registered\r\n[    1.376391]
+    acpiphp: Slot [17] registered\r\n[    1.381474] acpiphp: Slot [18] registered\r\n[
+    \   1.386649] acpiphp: Slot [19] registered\r\n[    1.392517] acpiphp: Slot [20]
+    registered\r\n[    1.399504] acpiphp: Slot [21] registered\r\n[    1.406449] acpiphp:
+    Slot [22] registered\r\n[    1.411515] acpiphp: Slot [23] registered\r\n[    1.416449]
+    acpiphp: Slot [24] registered\r\n[    1.421402] acpiphp: Slot [25] registered\r\n[
+    \   1.426477] acpiphp: Slot [26] registered\r\n[    1.431516] acpiphp: Slot [27]
+    registered\r\n[    1.436505] acpiphp: Slot [28] registered\r\n[    1.441430] acpiphp:
+    Slot [29] registered\r\n[    1.446393] acpiphp: Slot [30] registered\r\n[    1.450420]
+    acpiphp: Slot [31] registered\r\n[    1.456527] PCI host bridge to bus 0000:00\r\n[
+    \   1.461008] pci_bus 0000:00: root bus resource [bus 00-ff]\r\n[    1.468006]
+    pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]\r\n[    1.474005]
+    pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]\r\n[    1.480006]
+    pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]\r\n[    1.489006]
+    pci_bus 0000:00: root bus resource [mem 0xf0000000-0xfbffffff window]\r\n[    1.501978]
+    pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]\r\n[    1.508005]
+    pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]\r\n[    1.512005] pci
+    0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]\r\n[    1.518005]
+    pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]\r\n[    1.523710] *
+    Found PM-Timer Bug on the chipset. Due to workarounds for a bug,\r\n[    1.523710]
+    * this clock source is slow. Consider trying other clock sources\r\n[    1.534994]
+    pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI\r\n[    1.544753]
+    ACPI: PCI Interrupt Link [LNKA] (IRQs *5 10 11)\r\n[    1.551174] ACPI: PCI Interrupt
+    Link [LNKB] (IRQs 5 *10 11)\r\n[    1.557215] ACPI: PCI Interrupt Link [LNKC]
+    (IRQs 5 10 *11)\r\n[    1.563169] ACPI: PCI Interrupt Link [LNKD] (IRQs *5 10
+    11)\r\n[    1.586124] ACPI: Enabled 2 GPEs in block 00 to 0F\r\n[    1.592020]
+    xen:balloon: Initialising balloon driver\r\n[    1.599033] xen_balloon: Initialising
+    balloon driver\r\n[    1.604101] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none\r\n[
+    \   1.612010] vgaarb: loaded\r\n[    1.624009] vgaarb: bridge control possible
+    0000:00:02.0\r\n[    1.630248] SCSI subsystem initialized\r\n[    1.636039] ACPI:
+    bus type USB registered\r\n[    1.642031] usbcore: registered new interface driver
+    usbfs\r\n[    1.649022] usbcore: registered new interface driver hub\r\n[    1.656368]
+    usbcore: registered new device driver usb\r\n[    1.662089] PCI: Using ACPI for
+    IRQ routing\r\n[    1.669291] NetLabel: Initializing\r\n[    1.674008] NetLabel:
+    \ domain hash size = 128\r\n[    1.679007] NetLabel:  protocols = UNLABELED CIPSOv4\r\n[
+    \   1.685022] NetLabel:  unlabeled traffic allowed by default\r\n[    1.691084]
+    HPET: 3 timers in total, 0 timers will be used for per-cpu timer\r\n[    1.697021]
+    hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0\r\n[    1.704008] hpet0: 3 comparators,
+    64-bit 62.500000 MHz counter\r\n[    2.029721] Switched to clocksource xen\r\n[
+    \   2.037349] pnp: PnP ACPI init\r\n[    2.041420] ACPI: bus type PNP registered\r\n[
+    \   2.045340] system 00:00: [mem 0x00000000-0x0009ffff] could not be reserved\r\n[
+    \   2.050660] system 00:01: [io  0x08a0-0x08a3] has been reserved\r\n[    2.054706]
+    system 00:01: [io  0x0cc0-0x0ccf] has been reserved\r\n[    2.058449] system 00:01:
+    [io  0x04d0-0x04d1] has been reserved\r\n[    2.062413] system 00:07: [io  0x10c0-0x1141]
+    has been reserved\r\n[    2.066274] system 00:07: [io  0xb044-0xb047] has been
+    reserved\r\n[    2.085176] pnp: PnP ACPI: found 8 devices\r\n[    2.088050] ACPI:
+    bus type PNP unregistered\r\n[    2.098194] NET: Registered protocol family 2\r\n[
+    \   2.102916] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)\r\n[
+    \   2.110491] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)\r\n[
+    \   2.115843] TCP: Hash tables configured (established 131072 bind 65536)\r\n[
+    \   2.120607] TCP: reno registered\r\n[    2.123176] UDP hash table entries: 8192
+    (order: 6, 262144 bytes)\r\n[    2.127000] UDP-Lite hash table entries: 8192 (order:
+    6, 262144 bytes)\r\n[    2.131182] NET: Registered protocol family 1\r\n[    2.134148]
+    pci 0000:00:00.0: Limiting direct PCI/PCI transfers\r\n[    2.137834] pci 0000:00:01.0:
+    PIIX3: Enabling Passive Release\r\n[    2.141464] pci 0000:00:01.0: Activating
+    ISA DMA hang workarounds\r\n[    2.145350] Unpacking initramfs...\r\n[    2.614786]
+    Freeing initrd memory: 36820k freed\r\n[    2.626537] PCI-DMA: Using software
+    bounce buffering for IO (SWIOTLB)\r\n[    2.632067] software IO TLB [mem 0xec000000-0xf0000000]
+    (64MB) mapped at [ffff8800ec000000-ffff8800efffffff]\r\n[    2.640720] RAPL PMU:
+    API unit is 2^-32 Joules, 3 fixed counters, 163840 ms ovfl timer\r\n[    2.646529]
+    RAPL PMU: hw unit of domain pp0-core 2^-16 Joules\r\n[    2.650546] RAPL PMU:
+    hw unit of domain package 2^-16 Joules\r\n[    2.655036] RAPL PMU: hw unit of
+    domain dram 2^-16 Joules\r\n[    2.659589] sha1_ssse3: Using AVX optimized SHA-1
+    implementation\r\n[    2.663490] sha256_ssse3: Using AVX optimized SHA-256 implementation\r\n[
+    \   2.667872] futex hash table entries: 4096 (order: 6, 262144 bytes)\r\n[    2.671782]
+    Initialise system trusted keyring\r\n[    2.674770] audit: initializing netlink
+    socket (disabled)\r\n[    2.679136] type=2000 audit(1490285852.487:1): initialized\r\n[
+    \   2.702608] HugeTLB registered 2 MB page size, pre-allocated 0 pages\r\n[    2.707978]
+    zpool: loaded\r\n[    2.710279] zbud: loaded\r\n[    2.712892] VFS: Disk quotas
+    dquot_6.5.2\r\n[    2.715875] Dquot-cache hash table entries: 512 (order 0, 4096
+    bytes)\r\n[    2.719934] msgmni has been set to 29240\r\n[    2.722820] Key type
+    big_key registered\r\n[    2.726930] NET: Registered protocol family 38\r\n[    2.729988]
+    Key type asymmetric registered\r\n[    2.732909] Asymmetric key parser 'x509'
+    registered\r\n[    2.736211] Block layer SCSI generic (bsg) driver version 0.4
+    loaded (major 251)\r\n[    2.741852] io scheduler noop registered\r\n[    2.744682]
+    io scheduler deadline registered (default)\r\n[    2.748035] io scheduler cfq
+    registered\r\n[    2.751134] pci_hotplug: PCI Hot Plug PCI Core version: 0.5\r\n[
+    \   2.754832] pciehp: PCI Express Hot Plug Controller Driver version: 0.4\r\n[
+    \   2.758930] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0\r\n[
+    \   2.764085] ACPI: Power Button [PWRF]\r\n[    2.766839] input: Sleep Button
+    as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1\r\n[    2.771887] ACPI: Sleep
+    Button [SLPF]\r\n[    2.774772] GHES: HEST is not enabled!\r\n[    2.778026] xen:grant_table:
+    Grant tables using version 1 layout\r\n[    2.781689] Grant table initialized\r\n[
+    \   2.784415] Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!\r\n[    2.788288]
+    Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled\r\n[    2.818847] 00:06:
+    ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A\r\n[    2.822998] Non-volatile memory
+    driver v1.3\r\n[    2.825850] Linux agpgart interface v0.103\r\n[    2.828852]
+    crash memory driver: version 1.1\r\n[    2.831837] rdac: device handler registered\r\n[
+    \   2.834807] hp_sw: device handler registered\r\n[    2.837768] emc: device handler
+    registered\r\n[    2.840590] alua: device handler registered\r\n[    2.843443]
+    libphy: Fixed MDIO Bus: probed\r\n[    2.847229] ehci_hcd: USB 2.0 'Enhanced'
+    Host Controller (EHCI) Driver\r\n[    2.851219] ehci-pci: EHCI PCI platform driver\r\n[
+    \   2.854585] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver\r\n[    2.858416]
+    ohci-pci: OHCI PCI platform driver\r\n[    2.861424] uhci_hcd: USB Universal Host
+    Controller Interface driver\r\n[    2.865337] usbcore: registered new interface
+    driver usbserial\r\n[    2.869725] usbcore: registered new interface driver usbserial_generic\r\n[
+    \   2.875898] usbserial: USB Serial support registered for generic\r\n[    2.879755]
+    i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12\r\n[
+    \   2.887008] serio: i8042 KBD port at 0x60,0x64 irq 1\r\n[    2.890892] serio:
+    i8042 AUX port at 0x60,0x64 irq 12\r\n[    2.895128] mousedev: PS/2 mouse device
+    common for all mice\r\n[    2.899440] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2\r\n[
+    \   2.905428] rtc_cmos 00:02: rtc core: registered rtc_cmos as rtc0\r\n[    2.911622]
+    rtc_cmos 00:02: alarms up to one day, 114 bytes nvram, hpet irqs\r\n[    2.917866]
+    cpuidle: using governor menu\r\n[    2.922502] hidraw: raw HID events driver (C)
+    Jiri Kosina\r\n[    2.928348] usbcore: registered new interface driver usbhid\r\n[
+    \   2.934364] usbhid: USB HID core driver\r\n[    2.938428] drop_monitor: Initializing
+    network drop monitor service\r\n[    2.943357] TCP: cubic registered\r\n[    2.948188]
+    Initializing XFRM netlink socket\r\n[    2.952137] NET: Registered protocol family
+    10\r\n[    2.956653] NET: Registered protocol family 17\r\n[    2.960544] microcode:
+    CPU0 sig=0x306e4, pf=0x1, revision=0x428\r\n[    2.965820] microcode: CPU1 sig=0x306e4,
+    pf=0x1, revision=0x428\r\n[    2.970328] microcode: CPU2 sig=0x306e4, pf=0x1,
+    revision=0x428\r\n[    2.974900] microcode: CPU3 sig=0x306e4, pf=0x1, revision=0x428\r\n[
+    \   2.980590] microcode: Microcode Update Driver: v2.01 <tigran@aivazian.fsnet.co.uk>,
+    Peter Oruba\r\n[    2.986429] Loading compiled-in X.509 certificates\r\n[    3.006778]
+    Loaded X.509 cert 'Red Hat Enterprise Linux Driver Update Program (key 3): bf57f3e87362bc7229d9f465321773dfd1f77a80'\r\n[
+    \   3.014506] Loaded X.509 cert 'Red Hat Enterprise Linux kpatch signing key:
+    4d38fd864ebe18c5f0b72e3852e2014c3a676fc8'\r\n[    3.022330] Loaded X.509 cert
+    'Red Hat Enterprise Linux kernel signing key: 75fea1df245accd97a17fe3a367261e65f8a1e60'\r\n[
+    \   3.029463] registered taskstats version 1\r\n[    3.034647] Key type trusted
+    registered\r\n[    3.039559] Key type encrypted registered\r\n[    3.044320] IMA:
+    No TPM chip found, activating TPM-bypass!\r\n[    3.049193] xenbus_probe_frontend:
+    Device with no driver: device/vfb/0\r\n[    3.053795] xenbus_probe_frontend: Device
+    with no driver: device/vbd/768\r\n[    3.058668] xenbus_probe_frontend: Device
+    with no driver: device/vbd/51792\r\n[    3.063035] xenbus_probe_frontend: Device
+    with no driver: device/vif/0\r\n[    3.069146] rtc_cmos 00:02: setting system
+    clock to 2017-03-23 16:17:33 UTC (1490285853)\r\n[    3.075203] Freeing unused
+    kernel memory: 1680k freed\r\n[    3.081745] systemd[1]: systemd 219 running in
+    system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP
+    +GCRYPT +GNUTLS +ACL +XZ -LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN)\r\n[    3.092799]
+    systemd[1]: Detected virtualization xen.\r\n[    3.096141] systemd[1]: Detected
+    architecture x86-64.\r\n[    3.099537] systemd[1]: Running in initial RAM disk.\r\n[
+    \   3.108389] systemd[1]: No hostname configured.\r\n[    3.112443] systemd[1]:
+    Set hostname to <localhost>.\r\n[    3.117486] systemd[1]: Initializing machine
+    ID from random generator.\r\n[    3.152669] systemd[1]: Reached target Local File
+    Systems.\r\n[    3.156221] systemd[1]: Starting Local File Systems.\r\n[    3.162454]
+    systemd[1]: Reached target Timers.\r\n[    3.166144] systemd[1]: Starting Timers.\r\n[
+    \   3.173364] systemd[1]: Created slice Root Slice.\r\n[    3.177776] systemd[1]:
+    Starting Root Slice.\r\n[    3.186532] systemd[1]: Listening on Journal Socket.\r\n[
+    \   3.190414] systemd[1]: Starting Journal Socket.\r\n[    3.197985] systemd[1]:
+    Listening on udev Kernel Socket.\r\n[    3.203135] systemd[1]: Starting udev Kernel
+    Socket.\r\n[    3.212583] systemd[1]: Created slice System Slice.\r\n[    3.217603]
+    systemd[1]: Starting System Slice.\r\n[    3.221766] systemd[1]: Starting Create
+    list of required static device nodes for the current kernel...\r\n[    3.232746]
+    systemd[1]: Starting dracut cmdline hook...\r\n[    3.240932] systemd[1]: Starting
+    Journal Service...\r\n[    3.250613] systemd[1]: Starting Apply Kernel Variables...\r\n[
+    \   3.261809] systemd[1]: Reached target Slices.\r\n[    3.265408] systemd[1]:
+    Starting Slices.\r\n[    3.275464] systemd[1]: Reached target Swap.\r\n[    3.279867]
+    systemd[1]: Starting Swap.\r\n[    3.287544] systemd[1]: Listening on udev Control
+    Socket.\r\n[    3.292192] systemd[1]: Starting udev Control Socket.\r\n[    3.301593]
+    systemd[1]: Reached target Sockets.\r\n[    3.306095] systemd[1]: Starting Sockets.\r\n[
+    \   3.310141] systemd[1]: Started Dispatch Password Requests to Console Directory
+    Watch.\r\n[    3.319336] systemd[1]: Starting Dispatch Password Requests to Console
+    Directory Watch.\r\n[    3.332068] systemd[1]: Reached target Paths.\r\n[    3.336357]
+    systemd[1]: Starting Paths.\r\n[    3.345501] systemd[1]: Started Journal Service.\r\n[
+    \   3.429424] FUJITSU Extended Socket Network Device Driver - version 1.1 - Copyright
+    (c) 2015 FUJITSU LIMITED\r\n[    3.453444] FDC 0 is a S82078B\r\n[    3.467098]
+    scsi host0: ata_piix\r\n[    3.472431] scsi host1: ata_piix\r\n[    3.476203]
+    ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc100 irq 14\r\n[    3.481433]
+    ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc108 irq 15\r\n[    3.488332]
+    xen_netfront: Initialising Xen virtual ethernet driver\r\n[    3.523459] blkfront:
+    xvda: barrier or flush: disabled; persistent grants: disabled; indirect descriptors:
+    enabled;\r\n[    3.545788]  xvda: xvda1 xvda2\r\n[    3.550676] blkfront: xvdf:
+    flush diskcache: enabled; persistent grants: disabled; indirect descriptors: enabled;\r\n[
+    \   3.559848] Setting capacity to 78626816\r\n[    3.563109] xvdf: detected capacity
+    change from 0 to 40256929792\r\n[    3.659092] tsc: Refined TSC clocksource calibration:
+    2500.000 MHz\r\n[    3.754243] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input3\r\n[
+    \   3.781760] SGI XFS with ACLs, security attributes, no debug enabled\r\n[    3.788849]
+    XFS (xvda2): Mounting V5 Filesystem\r\n[    4.972110] XFS (xvda2): Ending clean
+    mount\r\n[    5.360415] systemd-journald[115]: Received SIGTERM from PID 1 (systemd).\r\n[
+    \   6.101352] type=1404 audit(1490285856.532:2): enforcing=1 old_enforcing=0 auid=4294967295
+    ses=4294967295\r\n[    6.409731] type=1403 audit(1490285856.839:3): policy loaded
+    auid=4294967295 ses=4294967295\r\n[    6.418302] systemd[1]: Successfully loaded
+    SELinux policy in 339.582ms.\r\n[    6.614501] ip_tables: (C) 2000-2006 Netfilter
+    Core Team\r\n[    6.618974] systemd[1]: Inserted module 'ip_tables'\r\n[    6.637018]
+    systemd[1]: Relabelled /dev and /run in 12.736ms.\r\n[    7.991890] systemd-journald[347]:
+    Received request to flush runtime journal from PID 1\r\n[    8.154165] type=1400
+    audit(1490285858.584:4): avc:  denied  { getattr } for  pid=379 comm=\"loadkeys\"
+    path=\"/userdata_test\" dev=\"xvda2\" ino=545395 scontext=system_u:system_r:loadkeys_t:s0
+    tcontext=system_u:object_r:root_t:s0 tclass=file\r\n[    8.751708] input: PC Speaker
+    as /devices/platform/pcspkr/input/input4\r\n[    8.852525] piix4_smbus 0000:00:01.3:
+    SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr\r\n[
+    \   9.248590] [drm] Initialized drm 1.1.0 20060810\r\n[    9.316632] ppdev: user-space
+    parallel port driver\r\n[    9.497954] AES CTR mode by8 optimization enabled\r\n[
+    \   9.503952] alg: No test for __gcm-aes-aesni (__driver-gcm-aes-aesni)\r\n[    9.553831]
+    [TTM] Zone  kernel: Available graphics memory: 7486294 kiB\r\n[    9.558865] [TTM]
+    Zone   dma32: Available graphics memory: 2097152 kiB\r\n[    9.562953] [TTM] Initializing
+    pool allocator\r\n[    9.566048] [TTM] Initializing DMA pool allocator\r\n[    9.569842]
+    [drm] fb mappable at 0xF0000000\r\n[    9.573539] [drm] vram aper at 0xF0000000\r\n[
+    \   9.577257] [drm] size 33554432\r\n[    9.580537] [drm] fb depth is 24\r\n[
+    \   9.583943] [drm]    pitch is 3072\r\n[    9.587703] alg: No test for crc32
+    (crc32-pclmul)\r\n[    9.587703] fbcon: cirrusdrmfb (fb0) is primary device\r\n[
+    \   9.624102] type=1305 audit(1490285860.054:5): audit_pid=414 old=0 auid=4294967295
+    ses=4294967295 subj=system_u:system_r:auditd_t:s0 res=1\r\n[    9.646107] Console:
+    switching to colour frame buffer device 128x48\r\n[    9.701976] cirrus 0000:00:02.0:
+    fb0: cirrusdrmfb frame buffer device\r\n[    9.708082] [drm] Initialized cirrus
+    1.0.0 20110418 for 0000:00:02.0 on minor 0\r\n[   10.117507] EXT4-fs (xvdf): mounting
+    ext3 file system using the ext4 subsystem\r\n[   10.125460] EXT4-fs (xvdf): mounted
+    filesystem with ordered data mode. Opts: (null)\r\n[   11.732337] IPv6: ADDRCONF(NETDEV_UP):
+    eth0: link is not ready\r\n[   14.051170] ISOFS: Unable to identify CD-ROM format.\r\n\r\r\nRed
+    Hat Enterprise Linux Server 7.3 (Maipo)\r\nKernel 3.10.0-514.el7.x86_64 on an
+    x86_64\r\n\r\nip-10-186-38-172 login: [   18.480162] ISOFS: Unable to identify
+    CD-ROM format.\r\n[   69.696639] blkfront: xvdk: barrier or flush: disabled; persistent
+    grants: disabled; indirect descriptors: enabled;\r\n[  402.142449] type=1305 audit(1490286252.572:1718):
+    audit_pid=0 old=414 auid=4294967295 ses=4294967295 subj=system_u:system_r:auditd_t:s0
+    res=1\r\n[  402.143793] type=1130 audit(1490286252.573:1719): pid=1 uid=0 auid=4294967295
+    ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=auditd comm=\"systemd\"
+    exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=? res=success'\r\n[
+    \ 402.143805] type=1131 audit(1490286252.573:1720): pid=1 uid=0 auid=4294967295
+    ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=auditd comm=\"systemd\"
+    exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=? res=success'\r\n[
+    \ 403.146366] type=1305 audit(1490286253.576:1721): audit_enabled=1 old=1 auid=4294967295
+    ses=4294967295 subj=system_u:system_r:auditd_t:s0 res=1\r\n[  403.152837] type=1305
+    audit(1490286253.582:1722): audit_pid=3238 old=0 auid=4294967295 ses=4294967295
+    subj=system_u:system_r:auditd_t:s0 res=1\r\n[  525.005091] type=1305 audit(1490286375.435:1856):
+    audit_pid=0 old=3238 auid=4294967295 ses=4294967295 subj=system_u:system_r:auditd_t:s0
+    res=1\r\n[  525.015393] type=1130 audit(1490286375.445:1857): pid=1 uid=0 auid=4294967295
+    ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=auditd comm=\"systemd\"
+    exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=? res=success'\r\n[
+    \ 525.028770] type=1131 audit(1490286375.458:1858): pid=1 uid=0 auid=4294967295
+    ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=auditd comm=\"systemd\"
+    exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=? res=success'\r\n[
+    \ 525.043837] type=1130 audit(1490286375.473:1859): pid=1 uid=0 auid=4294967295
+    ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-tmpfiles-setup
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  525.057870] type=1131 audit(1490286375.487:1860): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-tmpfiles-setup
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  525.075545] type=1130 audit(1490286375.505:1861): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=rhel-import-state
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  525.089806] type=1131 audit(1490286375.519:1862): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=rhel-import-state
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  525.112262] type=1130 audit(1490286375.542:1863): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=rhel-readonly
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  525.126840] type=1131 audit(1490286375.556:1864): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=rhel-readonly
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  525.156172] type=1130 audit(1490286375.585:1865): pid=1 uid=0
+    auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-remount-fs
+    comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=?
+    res=success'\r\n[  525.187819] systemd-shutdown[1]: Sending SIGTERM to remaining
+    processes...\r\n[  525.198171] systemd-journald[347]: Received SIGTERM from PID
+    1 (systemd-shutdow).\r\n[  525.207299] systemd-shutdown[1]: Sending SIGKILL to
+    remaining processes...\r\n[  525.215610] systemd-shutdown[1]: Unmounting file
+    systems.\r\n[  525.475000] systemd-shutdown[1]: All filesystems unmounted.\r\n[
+    \ 525.479279] systemd-shutdown[1]: Deactivating swaps.\r\n[  525.483727] systemd-shutdown[1]:
+    All swaps deactivated.\r\n[  525.488017] systemd-shutdown[1]: Detaching loop devices.\r\n[
+    \ 525.494580] systemd-shutdown[1]: All loop devices detached.\r\n[  525.499501]
+    systemd-shutdown[1]: Detaching DM devices.\r\n[  525.503878] systemd-shutdown[1]:
+    All DM devices detached.\r\n[  525.523597] systemd-shutdown[1]: Rebooting.\r\n[
+    \ 525.602193] xenbus: xenbus_dev_shutdown: device/vfb/0: Initialising != Connected,
+    skipping\r\n[  525.608884] Restarting system.\r\n[  525.612101] reboot: machine
+    restart\r\n"
+  cpu: '4'
+  end_time: 1490286451.972177
+  hostname: ec2-54-234-227-102.compute-1.amazonaws.com
+  id: i-04d10cf4a3ba8839a
+  id_region: i-04d10cf4a3ba8839a_us-east-1
+  itype: access
+  keepalive: false
+  memory: '14000000'
+  platform: rhel
+  product: cloud
+  region: us-east-1
+  region_endpoint: null
+  security_groups: [default]
+  stage_exception: null
+  stage_name: terminate_instance
+  stage_result: passed
+  start_time: 1490286449.869382
+  version: '7.3'
+  virtualization: hvm
