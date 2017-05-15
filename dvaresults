@@ -17,21 +17,23 @@ def parse_results(dva_yaml):
     # iterate over each testcase
     for item in doc:
         if 'test' in item:
-            name = 'dva.ami.' + item['test']['name']
+            test_name = 'dva.ami.' + item['test']['name']
+            result_name = 'dva.ami.%s.%s.%s' % (item['ami'], item['region'],
+                                                item['test']['name'])
             outcome = item['test']['result'].upper()
             if outcome == 'SKIP':
                 outcome = 'NEEDS_INSPECTION'
-            results[name] = {}
+            results[result_name] = {}
             data = {}
             data.update(item=item['ami'])
-            results[name].update(data=data)
-            results[name].update(outcome=outcome)
-            results[name].update(ref_url=ref_url)
-            results[name].update(note=None)
+            results[result_name].update(data=data)
+            results[result_name].update(outcome=outcome)
+            results[result_name].update(ref_url=ref_url)
+            results[result_name].update(note=None)
             testcase = {}
-            testcase.update(name=name)
+            testcase.update(name=test_name)
             testcase.update(ref_url=ref_url)
-            results[name].update(testcase=testcase)
+            results[result_name].update(testcase=testcase)
     body.update(results=results)
     body.update(ref_url=ref_url)
     json_data = json.dumps(body, sort_keys=True, indent=2)
