@@ -22,7 +22,7 @@ def parse_results(dva_yaml):
                                                 item['test']['name'])
             outcome = item['test']['result'].upper()
             if outcome == 'SKIP':
-                outcome = 'NEEDS_INSPECTION'
+                outcome = 'PASSED'
             results[result_name] = {}
             data = {}
             data.update(item=item['ami'])
